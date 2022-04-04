@@ -1,0 +1,3 @@
+00:10:33 [Skill] INFO  Skill:138 - Connecting to Furhat server on 192.168.0.24:1932
+00:10:33 [PruebaskillSkill] INFO  PruebaskillSkill:165 - Starting skill
+00:10:45 [Broker Client] ERROR BrokerClient:152 - Unexpected disconnect from broker
