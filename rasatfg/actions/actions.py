@@ -52,14 +52,55 @@ def _findAge(text) -> Text:
 	# spacy doc
 	doc = nlp(text)
 
-	# pattern
-	pattern = [{'POS':'ADP'},
-	      {'POS':'NUM'},
-	      {'LOWER':'años'}]
+	# pattern DET + NOUN + ADP + NUM + años
+	pattern_1 = [{'POS':'NOUN'},
+		 {'POS':'ADP'},
+		 {'POS':'NUM'},
+		 {'LOWER': 'años'}]
+
+	# pattern PROPN + ADP + NUM + años
+	pattern_2 = [{'POS':'PROPN'},
+		{'POS':'ADP'},
+		{'POS':'NUM'},
+		{'LOWER':'años'}]
+
+	# pattern ADV + ADP + NUM + años
+	pattern_3 = [{'POS':'ADV'},
+		{'POS':'ADP'},
+		{'POS':'NUM'},
+		{'LOWER':'años'}]
+
+	# pattern_4 = PROPN + ADV + ADJ + ADP + NUM + años
+	pattern_4 = [{'POS':'PROPN'},
+		 {'POS':'ADV'},
+		 {'POS':'ADJ'},
+		 {'POS':'ADP'},
+		 {'POS':'NUM'},
+		 {'LOWER':'años'}]
+
+	# pattern_5 = DET + ADJ + ADP + NUM + años
+	pattern_5 = [{'POS':'DET'},
+		 {'POS':'ADJ'},
+		 {'POS':'ADP'},
+		 {'POS':'NUM'},
+		 {'LOWER':'años'}]
+
+	# pattern_6 = DET + NOUN + ADJ + ADP + NUM + años
+	pattern_6 = [{'POS':'DET'},
+		 {'POS':'NOUN'},
+		 {'POS':'ADJ'},
+		 {'POS':'ADP'},
+		 {'POS':'NUM'},
+		 {'LOWER':'años'}]
+
+	# pattern_7 = NOUN + NUM + años
+	pattern_7 = [{'POS':'NOUN'},
+		 {'POS':'NUM'},
+		 {'LOWER':'años'}]
 		
 	# Matcher class object 
 	matcher = Matcher(nlp.vocab) 
-	matcher.add("ages", [pattern]) 
+	matcher.add("ages", [pattern_1, pattern_2 ,pattern_3, pattern_4, pattern_5, pattern_6, pattern_7]) 
 
 	matches = matcher(doc)
 
@@ -70,13 +111,11 @@ def _findAge(text) -> Text:
 		token = doc[matches[i][1]:matches[i][2]]
 		# append token to list
 		ages.append(str(token))
-
-	# # Only keep sentences containing Indian PMs
-	# for age in ages:
-	#     if (age.split()[2] == 'of') and (age.split()[3] != "India"):
-	#             ages.remove(age)
 	    
-	return ages[0]
+	if ages != []:
+		return ages[0]
+	else:
+		return ""
 
 
 class ActionFacilitySearch(Action):
