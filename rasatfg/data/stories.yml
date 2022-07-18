@@ -1,0 +1,82 @@
+version: "3.1"
+
+stories:
+
+- story: camino feliz años
+  steps:
+  - intent: años
+  - action: action_años
+
+- story: camino feliz años largo
+  steps:  
+  - intent: saludo
+  - action: utter_saludo
+  - intent: preguntas
+  - action: utter_respuesta
+  - intent: años
+  - action: action_años
+  - intent: preguntas
+  - action: utter_respuesta
+  - intent: despedida
+  - action: utter_despedida
+
+- story: camino feliz años saludos
+  steps:  
+  - intent: saludo
+  - action: utter_saludo
+  - intent: años
+  - action: action_años
+  - intent: despedida
+  - action: utter_despedida
+
+- story: camino feliz años y preguntas
+  steps:  
+  - intent: preguntas
+  - action: utter_respuesta
+  - intent: años
+  - action: action_años
+
+
+
+- story: camino feliz
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: humor_bien
+  - action: utter_feliz
+
+- story: camino infeliz 1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: humor_mal
+  - action: utter_animo
+  - action: utter_ha_sido_de_ayuda
+  - intent: afirmar
+  - action: utter_feliz
+
+- story: camino infeliz 2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: humor_mal
+  - action: utter_animo
+  - action: utter_ha_sido_de_ayuda
+  - intent: negar
+  - action: utter_despedida
+
+- story: decir adiós
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: reto bot
+  steps:
+  - intent: reto_bot
+  - action: utter_soy_un_bot
+
+- story: preguntas
+  steps:
+  - intent: preguntas
+  - action: utter_respuesta
+
