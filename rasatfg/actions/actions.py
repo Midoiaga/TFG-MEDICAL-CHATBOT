@@ -131,6 +131,12 @@ class ActionFacilitySearch(Action):
 		text_clean = _clean(info)
 		age = _findAge(text_clean)
 		age_clean = re.sub("de ",'',str(age))
-		dispatcher.utter_message(text="Tengo {}".format(age_clean))
+		age_clean_fin = " ".join(age_clean.split(" ")[-2:])
+		if age_clean_fin == "":
+			text="Prefiero no decirlo"
+		else:
+			text="Tengo {}".format(age_clean)
+
+		dispatcher.utter_message(text)
 
 		return []
