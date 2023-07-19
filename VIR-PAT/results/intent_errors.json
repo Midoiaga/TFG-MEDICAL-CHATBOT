@@ -1,0 +1,466 @@
+[
+  {
+    "text": "¿tomó alcohol?",
+    "intent": "personal_adiccion_alcohol_si_o_no",
+    "intent_prediction": {
+      "name": "personal_adiccion_alcohol_cantidad",
+      "confidence": 0.39033839106559753
+    }
+  },
+  {
+    "text": "¿Cuánto fumas?",
+    "intent": "personal_adiccion_fumar_si_o_no",
+    "intent_prediction": {
+      "name": "personal_adiccion_fumar_cantidad",
+      "confidence": 0.39277246594429016
+    }
+  },
+  {
+    "text": "¿haces ejercicio?",
+    "intent": "personal_deporte_si_o_no",
+    "intent_prediction": {
+      "name": "personal_deporte_describir",
+      "confidence": 0.11416644603013992
+    }
+  },
+  {
+    "text": "¿toma usted fibras",
+    "intent": "personal_dieta_si_o_no",
+    "intent_prediction": {
+      "name": "personal_trabajo_si_o_no",
+      "confidence": 0.171014666557312
+    }
+  },
+  {
+    "text": "¿comes mucho queso?",
+    "intent": "personal_dieta_si_o_no",
+    "intent_prediction": {
+      "name": "personal_dieta_cantidad",
+      "confidence": 0.40732288360595703
+    }
+  },
+  {
+    "text": "¿tiene hijos y cuántos embarazos ha tenido?",
+    "intent": "personal_entorno_hijos_si_o_no",
+    "intent_prediction": {
+      "name": "personal_entorno_hijos_describir",
+      "confidence": 0.22070537507534027
+    }
+  },
+  {
+    "text": "¿hay algo en particular que le preocupe",
+    "intent": "psiquiatria",
+    "intent_prediction": {
+      "name": "sintoma_paciente_localizacion_describir",
+      "confidence": 0.5480762720108032
+    }
+  },
+  {
+    "text": "¿tienes la sensación de que las moscas vuelan?",
+    "intent": "psiquiatria",
+    "intent_prediction": {
+      "name": "sintoma_paciente_cambio_describir",
+      "confidence": 0.2690577208995819
+    }
+  },
+  {
+    "text": "¿hay alguna preocupación o pensamiento que surja con frecuencia y del que no pueda deshacerse?",
+    "intent": "psiquiatria",
+    "intent_prediction": {
+      "name": "sintoma_paciente_cambio_describir",
+      "confidence": 0.1835554838180542
+    }
+  },
+  {
+    "text": "después de eso, entre todo lo que miramos en internet, todo y cualquier cosa, realmente no te aconsejo es más un fenómeno de ansiedad que otra cosa, creo entonces, ok ¿tienes alguna alergia en particular?",
+    "intent": "sintoma_paciente_alergia_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_causa_describir",
+      "confidence": 0.1935151070356369
+    }
+  },
+  {
+    "text": "has tenido piedras",
+    "intent": "sintoma_paciente_antecedentes_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "¿ha tenido una lesión en la cabeza",
+    "intent": "sintoma_paciente_antecedentes_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "¿tiene estos problemas todo el año o sólo en determinadas épocas o temporadas?",
+    "intent": "sintoma_paciente_aparicion_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.9570490717887878
+    }
+  },
+  {
+    "text": "¿tienes fugas hacia el final de tu ciclo",
+    "intent": "sintoma_paciente_aparicion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_describir",
+      "confidence": 0.9279175996780396
+    }
+  },
+  {
+    "text": "¿aparece el rojo en el momento de la menstruación?",
+    "intent": "sintoma_paciente_aparicion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_describir",
+      "confidence": 0.6812613010406494
+    }
+  },
+  {
+    "text": "¿le resulta difícil oír en un entorno ruidoso?",
+    "intent": "sintoma_paciente_aparicion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "los vómitos van precedidos de dolores de cabeza",
+    "intent": "sintoma_paciente_aparicion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "cuando te pones en una posición, como la posición fetal, que te acurrucas sobre ti mismo, ¿eso calma un poco el dolor?",
+    "intent": "sintoma_paciente_cambio_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.561132550239563
+    }
+  },
+  {
+    "text": "sus síntomas de la menopausia han disminuido",
+    "intent": "sintoma_paciente_cambio_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "puedes doblar las piernas",
+    "intent": "sintoma_paciente_capacidad_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "¿es capaz de vaciar bien la vejiga?",
+    "intent": "sintoma_paciente_capacidad_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "¿has notado lo que desencadena tu dificultad para estar de pie?",
+    "intent": "sintoma_paciente_causa_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_causa_si_o_no",
+      "confidence": 0.5141131281852722
+    }
+  },
+  {
+    "text": "¿el dolor es puntuado por las comidas?",
+    "intent": "sintoma_paciente_causa_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.4985150694847107
+    }
+  },
+  {
+    "text": "el paso de la comida le hace toser o atragantarse",
+    "intent": "sintoma_paciente_causa_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_cambio_si_o_no",
+      "confidence": 0.8078585267066956
+    }
+  },
+  {
+    "text": "¿has sentido algo anormal últimamente?",
+    "intent": "sintoma_paciente_describir",
+    "intent_prediction": {
+      "name": "psiquiatria",
+      "confidence": 0.27883380651474
+    }
+  },
+  {
+    "text": "¿Ha cambiado el dolor desde que empezó?",
+    "intent": "sintoma_paciente_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_inicio",
+      "confidence": 0.7848039865493774
+    }
+  },
+  {
+    "text": "¿es un dolor fuerte la intensidad?",
+    "intent": "sintoma_paciente_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 0.6393232345581055
+    }
+  },
+  {
+    "text": "¿hay otros signos?",
+    "intent": "sintoma_paciente_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "es la catalepsia significativa o discreta",
+    "intent": "sintoma_paciente_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 0.3901616334915161
+    }
+  },
+  {
+    "text": "qué tipos de alimentos no pasan",
+    "intent": "sintoma_paciente_describir",
+    "intent_prediction": {
+      "name": "motivo_de_consulta",
+      "confidence": 0.2658471167087555
+    }
+  },
+  {
+    "text": "¿Tuvo dolor en alguna otra parte? ¿El dolor fue en un sentido o en otro?",
+    "intent": "sintoma_paciente_localizacion_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_localizacion_si_o_no",
+      "confidence": 0.4809933006763458
+    }
+  },
+  {
+    "text": "ok ok ¿es un dolor fijo o se irradia? bien, ¿afecta a otros lugares?",
+    "intent": "sintoma_paciente_localizacion_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_localizacion_si_o_no",
+      "confidence": 0.5143414735794067
+    }
+  },
+  {
+    "text": "de acuerdo ¿y se irradió a alguna parte? ¿sentiste el dolor en otra parte? ¿o estaba realmente muy localizado?",
+    "intent": "sintoma_paciente_localizacion_describir",
+    "intent_prediction": {
+      "name": "sintoma_paciente_localizacion_si_o_no",
+      "confidence": 0.6458954215049744
+    }
+  },
+  {
+    "text": "es una puntada en tu costado",
+    "intent": "sintoma_paciente_localizacion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 0.9999970197677612
+    }
+  },
+  {
+    "text": "¿Tiene dolor o pesadez en el lado izquierdo debajo de la última costilla?",
+    "intent": "sintoma_paciente_localizacion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.6240832209587097
+    }
+  },
+  {
+    "text": "¿causa esto dificultades para respirar?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_causa_si_o_no",
+      "confidence": 0.32512366771698
+    }
+  },
+  {
+    "text": "¿ha notado que su orina es muy oscura?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_describir",
+      "confidence": 0.868565559387207
+    }
+  },
+  {
+    "text": "le molesta comer fruta",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_secuela_si_o_no",
+      "confidence": 0.29474008083343506
+    }
+  },
+  {
+    "text": "¿Su flujo vaginal es rojizo?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_describir",
+      "confidence": 0.9995111227035522
+    }
+  },
+  {
+    "text": "¿ha tenido alguna vez un cuerpo extraño en el oído?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_antecedentes_si_o_no",
+      "confidence": 0.38552555441856384
+    }
+  },
+  {
+    "text": "es un color turbio",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_describir",
+      "confidence": 0.9506867527961731
+    }
+  },
+  {
+    "text": "tienes un sabor de boca raro",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_describir",
+      "confidence": 0.202521413564682
+    }
+  },
+  {
+    "text": "¿tienes ardor al orinar?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.9976279139518738
+    }
+  },
+  {
+    "text": "¿ves luces que giran alrededor de tus ojos?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_entorno_si_o_no",
+      "confidence": 0.40485680103302
+    }
+  },
+  {
+    "text": "tiene la nariz seca e irritada",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "psiquiatria",
+      "confidence": 0.4457399249076843
+    }
+  },
+  {
+    "text": "¿algún otro problema, sangrado?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_describir",
+      "confidence": 0.990991473197937
+    }
+  },
+  {
+    "text": "¿ningún problema vascular conocido?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_localizacion_describir",
+      "confidence": 0.24017874896526337
+    }
+  },
+  {
+    "text": "has sangrado por el recto",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.24121539294719696
+    }
+  },
+  {
+    "text": "¿tiene un marcapasos o un implante?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "tratamiento_operacion_complicaciones",
+      "confidence": 0.16688619554042816
+    }
+  },
+  {
+    "text": "cuando exhala, ¿siente siempre que tiene aire en los pulmones?",
+    "intent": "sintoma_paciente_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.8555454015731812
+    }
+  },
+  {
+    "text": "¿tiene usted un médico de cabecera?",
+    "intent": "tratamiento_consulta_si_o_no",
+    "intent_prediction": {
+      "name": "tratamiento_consulta_especialista_si_o_no",
+      "confidence": 0.5588688254356384
+    }
+  },
+  {
+    "text": "¿has sido anestesiado alguna vez?",
+    "intent": "tratamiento_medicacion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_antecedentes_si_o_no",
+      "confidence": 0.46166762709617615
+    }
+  },
+  {
+    "text": "de acuerdo ¿no tomas aspirina o?",
+    "intent": "tratamiento_medicacion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_aparicion_si_o_no",
+      "confidence": 0.16273024678230286
+    }
+  },
+  {
+    "text": "¿Intentaste tomar algo para aliviar el dolor?",
+    "intent": "tratamiento_medicacion_si_o_no",
+    "intent_prediction": {
+      "name": "tratamiento_medicacion_describir",
+      "confidence": 0.578202486038208
+    }
+  },
+  {
+    "text": "se ha sometido a una orquiectomía",
+    "intent": "tratamiento_operacion_si_o_no",
+    "intent_prediction": {
+      "name": "tratamiento_operacion_describir",
+      "confidence": 0.5168834328651428
+    }
+  },
+  {
+    "text": "¿lleva dentadura postiza?",
+    "intent": "tratamiento_operacion_si_o_no",
+    "intent_prediction": {
+      "name": "sintoma_paciente_si_o_no",
+      "confidence": 0.22594797611236572
+    }
+  },
+  {
+    "text": "¿llevas un mantenedor de espacio",
+    "intent": "tratamiento_operacion_si_o_no",
+    "intent_prediction": {
+      "name": "tratamiento_operacion_resultados",
+      "confidence": 0.13825051486492157
+    }
+  },
+  {
+    "text": "¿se hizo un discograma",
+    "intent": "tratamiento_operacion_si_o_no",
+    "intent_prediction": {
+      "name": "tratamiento_operacion_fecha",
+      "confidence": 0.3979910612106323
+    }
+  }
+]

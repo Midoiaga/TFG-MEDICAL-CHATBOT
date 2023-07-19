@@ -1,0 +1,461 @@
+stories:
+- story: interne 5
+  steps:
+  - user: |
+      Hola, señora. ¿Es usted la señora?
+    intent: personal_datos_nombre
+  - action: action_personal_datos_nombre
+  - user: |
+      ¿Qué edad tienes?
+    intent: personal_datos_edad
+  - action: action_personal_datos_edad
+  - user: |
+      Y has venido porque te duele el estómago. Dime cuándo empezó.
+    intent: sintoma_paciente_inicio
+  - action: action_sintoma_paciente_inicio
+  - user: |
+      ¿Empezó anoche?
+    intent: sintoma_paciente_inicio
+  - action: action_sintoma_paciente_inicio
+  - user: |
+      ¿Le dolió en alguna otra parte? ¿El dolor fue en un sentido o en otro?
+    intent: sintoma_paciente_localizacion_describir
+  - action: action_sintoma_paciente_localizacion_describir
+  - user: |
+      ¿Qué hay a la derecha?
+    intent: sintoma_paciente_localizacion_si_o_no
+  - action: action_sintoma_paciente_localizacion_si_o_no
+  - user: |
+      Vale, vale, vale. ¿Vomitaste?
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      ¿Intentaste tomar algo para aliviar el dolor?
+    intent: tratamiento_medicacion_describir
+  - action: action_tratamiento_medicacion_describir
+  - user: |
+      Me lo llevo. ¿Has tenido alguna vez el mismo dolor? ¿Has estado alguna vez enfermo y te ha hecho lo mismo?
+    intent: sintoma_paciente_antecedentes_describir
+  - action: action_sintoma_paciente_antecedentes_describir
+  - user: |
+      ¿Cuándo fue?
+    intent: sintoma_paciente_inicio
+  - action: action_sintoma_paciente_inicio
+  - user: |
+      Se fue muy rápido. ¿Y luego se quedó?
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      ¿Tenías fiebre?
+    intent: sintoma_paciente_fiebre_si_o_no
+  - action: action_sintoma_paciente_fiebre_si_o_no
+  - user: |
+      ¿El dolor le impedía comer?
+    intent: sintoma_paciente_secuela_si_o_no
+  - action: action_sintoma_paciente_secuela_si_o_no
+  - user: |
+      Así que pude comer de todos modos. ¿Toma tratamientos todos los días? ¿Alguna medicación?
+    intent: tratamiento_medicacion_describir
+  - action: action_tratamiento_medicacion_describir
+  - user: |
+      ¿Ni siquiera la píldora?
+    intent: tratamiento_anticonceptivos_si_o_no
+  - action: action_tratamiento_anticonceptivos_si_o_no
+  - user: |
+      TENGO UN DIU. ¿Tienes alguna patología como presión arterial, diabetes...?
+    intent: sintoma_paciente_antecedentes_si_o_no
+  - action: action_sintoma_paciente_antecedentes_si_o_no
+  - user: |
+      ¿Cirugía o...?
+    intent: tratamiento_operacion_describir
+  - action: action_tratamiento_operacion_describir
+  - user: |
+      ¿Hay problemas de salud en su familia?
+    intent: sintoma_familia_describir
+  - action: action_sintoma_familia_describir
+  - user: |
+      ¿A qué edad?
+    intent: sintoma_familia_describir
+  - action: action_sintoma_familia_describir
+
+- story: interne 41
+  steps:
+  - user: |
+      cuál es el objetivo de su presencia
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      cuál es el objetivo de su consulta
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿está usted aquí para una consulta?
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿qué es lo que padece?
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿qué es lo que padece?
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿sufres de algo?
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿cómo le duele?
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      su nombre y apellidos
+    intent: personal_datos_nombre
+  - action: action_personal_datos_nombre
+  - user: |
+      cuál es su nombre
+    intent: personal_datos_nombre
+  - action: action_personal_datos_nombre
+  - user: |
+      vive con sus hijos
+    intent: personal_entorno_si_o_no
+  - action: action_personal_entorno_si_o_no
+  - user: |
+      ¿vive con sus hijos?
+    intent: personal_entorno_si_o_no
+  - action: action_personal_entorno_si_o_no
+  - user: |
+      ¿tiene hijos?
+    intent: personal_entorno_hijos_si_o_no
+  - action: action_personal_entorno_hijos_si_o_no
+  - user: |
+      ¿ha tenido algún embarazo?
+    intent: sintoma_paciente_embarazo_cantidad
+  - action: action_sintoma_paciente_embarazo_cantidad
+  - user: |
+      cuántos embarazos ha tenido
+    intent: sintoma_paciente_embarazo_cantidad
+  - action: action_sintoma_paciente_embarazo_cantidad
+  - user: |
+      ¿cómo fueron sus embarazos?
+    intent: sintoma_paciente_embarazo_describir
+  - action: action_sintoma_paciente_embarazo_describir
+  - user: |
+      ¿ha tenido algún embarazo?
+    intent: sintoma_paciente_embarazo_describir
+  - action: action_sintoma_paciente_embarazo_describir
+  - user: |
+      ¿has estado alguna vez embarazada?
+    intent: sintoma_paciente_embarazo_describir
+  - action: action_sintoma_paciente_embarazo_describir
+  - user: |
+      cuando tuvo su último hijo
+    intent: personal_entorno_hijos_edad
+  - action: action_personal_entorno_hijos_edad
+  - user: |
+      ¿Cuándo fue su último embarazo?
+    intent: personal_entorno_hijos_edad
+  - action: action_personal_entorno_hijos_edad
+  - user: |
+      ¿Está usted casado?
+    intent: personal_entorno_pareja_si_o_no
+  - action: action_personal_entorno_pareja_si_o_no
+  - user: |
+      cómo se llama su marido
+    intent: personal_entorno_pareja_nombre
+  - action: action_personal_entorno_pareja_nombre
+  - user: |
+      cuál es su deporte favorito
+    intent: personal_deporte_describir
+  - action: action_personal_deporte_describir
+  - user: |
+      ¿practicas algún deporte?
+    intent: personal_deporte_describir
+  - action: action_personal_deporte_describir
+  - user: |
+      ¿haces algún deporte?
+    intent: personal_deporte_describir
+  - action: action_personal_deporte_describir
+  - user: |
+      ¿Estás a dieta?
+    intent: personal_dieta_describir
+  - action: action_personal_dieta_describir
+  - user: |
+      ¿tiene alguna dieta o tratamiento que esté siguiendo actualmente?
+    intent: tratamiento_medicacion_describir
+  - action: action_tratamiento_medicacion_describir
+
+- story: interne 37
+  steps:
+  - user: |
+      Buenos días, señora.
+    intent: saludo
+  - action: action_saludo
+  - user: |
+      lo que te trae hoy aquí
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿por qué necesito consultarle hoy?
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      ¿cuándo empezó su dolor?
+    intent: sintoma_paciente_inicio
+  - action: action_sintoma_paciente_inicio
+  - user: |
+      ¿Cómo empezó?
+    intent: sintoma_paciente_aparicion_describir
+  - action: action_sintoma_paciente_aparicion_describir
+  - user: |
+      ¿Empezó antes o después de comer?
+    intent: sintoma_paciente_aparicion_describir
+  - action: action_sintoma_paciente_aparicion_describir
+  - user: |
+      ¿Es la primera vez que tienes un dolor así?
+    intent: sintoma_paciente_antecedentes_describir
+  - action: action_sintoma_paciente_antecedentes_describir
+  - user: |
+      ¿Y ayer el dolor se calmó en cuánto tiempo?
+    intent: sintoma_paciente_duracion
+  - action: action_sintoma_paciente_duracion
+  - user: |
+      y cuánto duró el dolor
+    intent: sintoma_paciente_duracion
+  - action: action_sintoma_paciente_duracion
+  - user: |
+      ¿ha vomitado o tenido diarrea en las últimas semanas?
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      vomitaste
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      dónde está el dolor
+    intent: sintoma_paciente_localizacion_describir
+  - action: action_sintoma_paciente_localizacion_describir
+  - user: |
+      ¿sientes algún tipo de ardor
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      cuánto dura el dolor
+    intent: sintoma_paciente_duracion
+  - action: action_sintoma_paciente_duracion
+  - user: |
+      el dolor comenzó después de una comida o antes de una comida
+    intent: sintoma_paciente_aparicion_describir
+  - action: action_sintoma_paciente_aparicion_describir
+  - user: |
+      Cuando te presionas el estómago, ¿te duele?
+    intent: sintoma_paciente_aparicion_si_o_no
+  - action: action_sintoma_paciente_aparicion_si_o_no
+  - user: |
+      ¿Se ha operado alguna vez?
+    intent: tratamiento_operacion_describir
+  - action: action_tratamiento_operacion_describir
+  - user: |
+      ¿a qué se dedica?
+    intent: personal_trabajo_describir
+  - action: action_personal_trabajo_describir
+  - user: |
+      fuma usted
+    intent: personal_adiccion_fumar_si_o_no
+  - action: action_personal_adiccion_fumar_si_o_no
+  - user: |
+      bebe alcohol con regularidad
+    intent: personal_adiccion_alcohol_frecuencia
+  - action: action_personal_adiccion_alcohol_frecuencia
+  - user: |
+      ¿tomas alguna otra droga de dragones tomas alguna droga
+    intent: personal_adiccion_otros_describir
+  - action: action_personal_adiccion_otros_describir
+  - user: |
+      ¿tomas drogas?
+    intent: personal_adiccion_otros_describir
+  - action: action_personal_adiccion_otros_describir
+  - user: |
+      ¿cuántos hijos tiene?
+    intent: personal_entorno_hijos_describir
+  - action: action_personal_entorno_hijos_describir
+  - user: |
+      ¿Tiene algún problema médico en particular?
+    intent: sintoma_paciente_antecedentes_describir
+  - action: action_sintoma_paciente_antecedentes_describir
+  - user: |
+      ¿toma algún tratamiento en casa?
+    intent: tratamiento_medicacion_describir
+  - action: action_tratamiento_medicacion_describir
+  - user: |
+      ¿el paracetamol alivia el dolor?
+    intent: sintoma_paciente_cambio_si_o_no
+  - action: action_sintoma_paciente_cambio_si_o_no
+  - user: |
+      tuviste diarrea así que
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      el dolor es más como ardor, calambre, punzante
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      ¿Sus padres siguen vivos?
+    intent: personal_entorno_padres_si_o_no
+  - action: action_personal_entorno_padres_si_o_no
+  - user: |
+      ¿todavía viven tus padres?
+    intent: personal_entorno_padres_si_o_no
+  - action: action_personal_entorno_padres_si_o_no
+  - user: |
+      ¿hay alguna enfermedad particular en la familia?
+    intent: sintoma_familia_describir
+  - action: action_sintoma_familia_describir
+  - user: |
+      ¿cómo es tu dolor? ¿se irradia a alguna parte? ¿tienes algún otro dolor que no sea el del estómago?
+    intent: sintoma_paciente_localizacion_describir
+  - action: action_sintoma_paciente_localizacion_describir
+  - user: |
+      ¿Has tenido un dolor así en las últimas semanas?
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      ¿tiene fiebre en casa?
+    intent: sintoma_paciente_fiebre_si_o_no
+  - action: action_sintoma_paciente_fiebre_si_o_no
+  - user: |
+      ¿ha perdido peso en las últimas semanas?
+    intent: personal_fisico_peso_cambio
+  - action: action_personal_fisico_peso_cambio
+  - user: |
+      y cuanto eras tú hace 1 año
+    intent: otros
+  - action: action_otros
+  - user: |
+      ¿los dolores que describe están presentes después de las comidas cada vez
+    intent: sintoma_paciente_aparicion_si_o_no
+  - action: action_sintoma_paciente_aparicion_si_o_no
+  - user: |
+      y el dolor que describió antes, ¿ocurrió después de cada comida
+    intent: sintoma_paciente_aparicion_si_o_no
+  - action: action_sintoma_paciente_aparicion_si_o_no
+  - user: |
+      ¿Se ha hecho alguna prueba previa antes de venir a verme?
+    intent: tratamiento_pruebas_describir
+  - action: action_tratamiento_pruebas_describir
+
+- story: interne 17
+  steps:
+  - user: |
+      Hola
+    intent: saludo
+  - action: action_saludo
+  - user: |
+      lo que te lleva a la sala de emergencias
+    intent: motivo_de_consulta
+  - action: action_motivo_de_consulta
+  - user: |
+      desde cuando
+    intent: sintoma_paciente_inicio
+  - action: action_sintoma_paciente_inicio
+  - user: |
+      ¿tomó alguna medicación?
+    intent: tratamiento_medicacion_describir
+  - action: action_tratamiento_medicacion_describir
+  - user: |
+      ¿tiene usted fiebre?
+    intent: sintoma_paciente_fiebre_si_o_no
+  - action: action_sintoma_paciente_fiebre_si_o_no
+  - user: |
+      ¿cómo te sientes?
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      durante cuánto tiempo
+    intent: sintoma_paciente_duracion
+  - action: action_sintoma_paciente_duracion
+  - user: |
+      cuánto tiempo ha tenido el dolor de estómago
+    intent: sintoma_paciente_duracion
+  - action: action_sintoma_paciente_duracion
+  - user: |
+      ¿has vomitado?
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      ¿Qué tal los vómitos?
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      justo después de la comida
+    intent: sintoma_paciente_aparicion_si_o_no
+  - action: action_sintoma_paciente_aparicion_si_o_no
+  - user: |
+      vomitaste justo después de comer
+    intent: sintoma_paciente_aparicion_si_o_no
+  - action: action_sintoma_paciente_aparicion_si_o_no
+  - user: |
+      ¿qué comiste?
+    intent: sintoma_paciente_causa_describir
+  - action: action_sintoma_paciente_causa_describir
+  - user: |
+      ¿tiene usted fiebre?
+    intent: sintoma_paciente_fiebre_si_o_no
+  - action: action_sintoma_paciente_fiebre_si_o_no
+  - user: |
+      ¿sentiste escalofríos
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      ¿tiene usted diarrea?
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      de qué color es la orina
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      ¿De qué color es su orina?
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      de qué color es su orina
+    intent: sintoma_paciente_describir
+  - action: action_sintoma_paciente_describir
+  - user: |
+      ¿tiene usted orina oscura?
+    intent: sintoma_paciente_si_o_no
+  - action: action_sintoma_paciente_si_o_no
+  - user: |
+      el dolor en el vientre se extiende
+    intent: sintoma_paciente_localizacion_si_o_no
+  - action: action_sintoma_paciente_localizacion_si_o_no
+  - user: |
+      ¿Te duele la espalda?
+    intent: sintoma_paciente_localizacion_si_o_no
+  - action: action_sintoma_paciente_localizacion_si_o_no
+  - user: |
+      ¿Alguien más a tu alrededor ha vomitado?
+    intent: sintoma_entorno_si_o_no
+  - action: action_sintoma_entorno_si_o_no
+  - user: |
+      ¿Alguien que haya comido la pizza contigo ha vomitado?
+    intent: sintoma_entorno_si_o_no
+  - action: action_sintoma_entorno_si_o_no
+  - user: |
+      es el dolor en la parte superior del abdomen
+    intent: sintoma_paciente_localizacion_si_o_no
+  - action: action_sintoma_paciente_localizacion_si_o_no
+  - user: |
+      ¿Tiene algún historial médico?
+    intent: sintoma_paciente_antecedentes_describir
+  - action: action_sintoma_paciente_antecedentes_describir
+  - user: |
+      fuma usted
+    intent: personal_adiccion_fumar_si_o_no
+  - action: action_personal_adiccion_fumar_si_o_no
+  - user: |
+      ¿Consume usted alcohol?
+    intent: personal_adiccion_alcohol_si_o_no
+  - action: action_personal_adiccion_alcohol_si_o_no
+

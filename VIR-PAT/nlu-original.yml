@@ -1,0 +1,410 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hey
+    - hola
+    - hola amigo
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - buen dia
+    - buena tarde
+    - buena noche
+
+- intent: despedida
+  examples: |
+    - adiós
+    - adios
+    - hasta luego
+    - hasta mañana
+    - que tengas un buen dia
+    - buenas tardes
+    - buenas noches
+    - buen fin de semana
+
+- intent: afirmar
+  examples: |
+    - si
+    - s
+    - en efecto
+    - correcto
+    - claro
+    - claro que si
+    - por supuesto
+    - por supuesto que si
+
+- intent: negar
+  examples: |
+    - no
+    - n
+    - nunca
+    - no lo creo
+    - ciertamente no
+    - imposible
+    - realmente no
+    - por supuesto que no
+    - de ninguna manera
+
+- intent: preguntar_sintomas
+  examples: |
+    - hola. entonces. ¿por qué vienes a urgencias?
+    - hola. entonces. ¿por qué viene al hospital?
+    - Buenos dias. Entonces. ¿Por qué vienes a la sala de emergencias?
+    - buenos días señora. ¿podría contarme un poco lo que está pasando? ¿por qué está aquí?
+    - ¿Por qué viene al hospital?
+    - ¿Por qué viene a urgencias?
+    - ¿qué te trae hoy a urgencias?
+    - ¿qué le pasa?
+    - ¿a qué viene?
+    - ¿para que vienes?
+    - ¿para qué estás aquí?
+    - ¿por qué estás aquí?
+    - ¿para qué has venido?
+    - ¿cuál es el motivo de su visita?
+    - ¿motivo de consulta?
+    - ¿Qué te trae por aquí?
+    - explícame por qué estás aquí
+    - ¿Por qué vienes a ver a un médico?
+    - ¿cómo estás?
+    - cómo estás
+    - como estas
+    - ¿qué te trae por aquí?
+    - ¿qué te lleva a consultar?
+    - ¿estás enfermo?
+    - ¿está usted enfermo?
+    - ¿qué síntomas tienes?
+    - ¿síntomas?
+    - ¿qué pasa con usted?
+    - ¿Por qué estás aquí?
+    - cuál es su estado
+    - bien. ¿tiene alguna enfermedad?
+
+- intent: preguntar_años
+  examples: |
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes ahora?
+    - ¿Qué edad tiene?
+    - cual es su edad?
+    - edad
+    -¿qué edad tienen?
+
+- intent: preguntar_fecha_nacimiento
+  examples: |
+    - fecha de nacimiento
+    - ¿puede decirme su fecha de nacimiento?
+    - ¿Cuál es su fecha de nacimiento?
+
+- intent: preguntar_peso
+  examples: |
+    - peso
+    - ¿cuál es su peso habitual?
+    - ¿cuánto pesa?
+
+- intent: preguntar_altura
+  examples: |
+    - altura
+    - ¿Cuás es su altura?
+    - cuanto mide?
+
+- intent: preguntar_familia
+  examples: |
+    - hijos
+    - ¿tiene hijos?
+    - tiene familia?
+    - familia
+
+- intent: preguntar_habitos
+  examples: |
+    - bebe?
+    - bebes?
+    - fumas?
+    - suele beber?
+    - es fumador?
+    - ¿usas drogas?
+    - ¿cuánto alcohol bebe?
+    - adicciones?
+
+- intent: preguntar_trabajo
+  examples: |
+    - trabajo
+    - ok. ¿y tienes trabajo?
+    - ¿trabajas?
+    - ¿Cuál es su trabajo?
+
+- intent: preguntar_deporte
+  examples: |
+    - practica algún deporte?
+    - deporte
+    - haces deporte?
+    - hace deporte regularmente?
+    - ¿haces algún deporte?
+    - juegas a algun deporte?
+
+- intent: preguntar_sueño
+  examples: |
+    - cuantas horas duerme habitualmente?
+    - ¿Qué tal duermes?
+    - ¿Duermes bien?
+    - ¿Horario de sueño?
+    - ¿Que horario de sueño tienes?
+
+- intent: preguntar_dieta
+  examples: |
+    - comes [pan](comida)?
+    - comes [chocolate](comida)?
+    - comes [niños](comida)?
+    - ¿dieta?
+    - ¿Que dieta haces?
+
+- intent: preguntar_sintoma
+  examples: |
+    - ¿no hay [diabetes](sintoma)?
+    - ¿[hipertensión](sintoma)?
+    - ok. ¿tienes alguna patología como [presión arterial](sintoma), [diabetes](sintoma)?
+    - [cesárea](sintoma) o ?
+    - ¿y nadie tuvo [fiebre](sintoma) en tu casa?
+    - ¿Sin [diabetes](sintoma)? ¿Sin [colesterol](sintoma)? ¿Sin [presión arterial](sintoma)?
+    - ¿tiene alguna alergia conocida?
+
+- intent: preguntar_tratamiento
+  examples: |
+    - tratamiento
+    - ¿y ya habías tomado tratamientos antes?
+    - [aspirina](tratamiento)
+    - ¿tomas [aspirina](tratamiento)?
+    - ¿tomaste [analgésicos](tratamiento)?
+    - [paracetamol](tratamiento)
+    - medicamento
+    - ¿toma algún medicamento?
+    - y ¿se ha operado alguna vez o?
+    - ¿usas métodos anticonceptivos?
+
+- intent: preguntar_antecedentes_familiares
+  examples: |
+    - y en su familia, ¿hay problemas de salud?
+    - ¿Están todos los miembros de la familia sanos?
+    - ¿tiene su familia algún problema de salud?
+
+- intent: preguntar_frecuencia_sintomas
+  examples: |
+    - bien, de acuerdo. ¿has tenido un dolor así antes, o alguna vez?
+    - cierto. y ¿has tenido alguna vez un dolor así? ¿sabes?
+    - y este dolor, ¿lo has experimentado antes?
+    - y pasaba de vez en cuando?
+    - cierto. ¿nunca has tenido dolor en ese lugar?
+    -¿has tenido alguna vez este tipo de dolor?
+
+
+
+
+
+#- intent: otros
+
+
+
+#     - [nombre](personal_data)
+#     - buenos días señora. ¿cómo se llama?
+#     - ¿Cuás es su [nombre](personal_data)?
+#     - ¿Cómo te llamas?
+#     - [residencia](personal_data)
+#     - ¿Dónde vives?
+#     - casa
+#     - ¿Dónde se encuentra su [residencia](personal_data)?
+
+# - intent: ask_medical_history
+#   examples: |
+#     - bien, de acuerdo. ¿has tenido un dolor así antes, o alguna vez?
+#     - ¿has tenido alguna vez un dolor así?
+#     - y ¿se le está siguiendo por alguna enfermedad en particular?
+#     - y este dolor, ¿lo has experimentado antes?
+#     - y pasaba de vez en cuando?
+#     - ¿alguna enfermedad?
+#     - ¿tienes algún antecedente?
+#     - ¿no hay diabetes?
+#     - ¿hipertensión?
+
+# - intent: ask_symptoms
+#   examples: |
+#     - ¿Cómo te sientes?
+#     - ¿Cómo estás?
+#     - ¿Que tal estás?
+#     - [dolor](symptom)
+#     - [dolor](symptom) de [cabeza](body_part)
+#     - [dolor](symptom) de [tripa](body_part)
+#     - [dolor](symptom) de [rodilla](body_part)
+#     - [dolor](symptom) de [estómago](body_part)
+#     - ¿te duele algo en particular?
+#     - ok. ¿y te duele dónde?
+#     - ¿te duele?¿dónde?
+#     - ¿dónde te duele?
+#     - ¿sientes dolor?
+#     - [mareos](symptom)
+#     - [cansancio](symptom)
+#     - [vomitos](symptom)
+#     - ¿tienes ganas de vomitar?
+#     - [tos](symptom)
+#     - [estornudo](symptom)
+#     - [fiebre](symptom)
+#     - ¿tienes [fiebre](symptom) o no?
+#     - ¿tiene [fiebre](symptom)?
+#     - ¿Tuvo [fiebre](symptom)?
+#     - ¿Se tomó la temperatura?
+#     - ¿Qué temperatura tiene?
+
+# - intent: ask_lifestyle
+#   examples: |
+#     - [fumar](lifestyle)
+#     - ¿fuma?
+#     - ¿[fumar](lifestyle)?
+#     - ¿suele [fumar](lifestyle)?
+#     - ¿es fumador?
+#     - [alcohol](lifestyle)
+#     - ¿bebe?
+#     - ¿bebe de vez en cuando?
+#     - ¿tomó [alcohol](lifestyle)?
+#     - [viaje](lifestyle)
+#     - ¿estás bebiendo?
+#     - ¿Ha viajado recientemente?
+#     - ¿Ha hecho algún [viaje](lifestyle)?
+#     - ¿Ha ido de [viaje](lifestyle)?
+#     - [deporte](lifestyle)
+#     - ¿Realiza a menudo actividades físicas?
+#     - ¿Hace [deporte](lifestyle)?
+#     - [dieta](lifestyle)
+#     - ¿Cómo es su [dieta](lifestyle)?
+
+# - intent: other
+#   examples: |
+#     - bien. ahora vamos a examinarte un poco, y ....
+#     - Soy anestesista, no voy a operarte
+#     - te van a operar, pues te voy a hacer unas preguntas sobre la anestesia
+#     - ah
+#     - vaina
+#     - en el peor de los casos?
+
+# - synonym: años
+#   examples: |
+#     - años
+#     - edad
+
+# - synonym: hijos
+#   examples: |
+#     - hijo
+#     - hijos
+#     - embarazo
+#     - embarazos
+
+# - synonym: trabajo
+#   examples: |
+#     - trabajo
+#     - trabaja
+#     - trabajas
+#     - ocupación
+
+# - synonym: q_trabajo
+#   examples: |
+#     - ¿en qué trabajas?
+#     - ¿a que te dedicas?
+#     - ¿cuál es tu trabajo?
+#     - ¿cuál es su trabajo?
+
+# - synonym: nombre
+#   examples: |
+#     - nombre
+#     - apellido
+#     - apellidos
+
+# - synonym: q_nombre
+#   examples: |
+#     - ¿como se llama?
+#     - ¿cual es su nombre?
+
+# - synonym: residencia
+#   examples: |
+#     - casa
+#     - residencia
+
+# - synonym: q_residencia
+#   examples: |
+#     - ¿donde vives?
+#     - ¿donde está su residencia?
+
+# - synonym: q_altura
+#   examples: |
+#     - ¿cuál es su altura?
+#     - ¿cuánto mide?
+#     - ¿cuánto mides?
+
+# - synonym: q_peso
+#   examples: |
+#     - ¿cuál es su peso habitual?
+#     - ¿cuánto pesa?
+
+# - synonym: dolor
+#   examples: |
+#     - dolor
+#     - dolores
+#     - duele
+#     - duelen
+
+# - synonym: vomitos
+#   examples: |
+#     - vomito
+#     - vomitos
+#     - vomitar
+#     - vomitas
+
+# - synonym: fiebre
+#   examples: |
+#     - fiebre
+#     - temperatura
+
+# - synonym: fumar
+#   examples: |
+#     - fumar
+#     - fuma
+#     - fumas
+#     - fumador
+#     - fumadora
+
+# - synonym: alcohol
+#   examples: |
+#     - bebe
+#     - beber
+#     - bebido
+#     - bebiendo
+#     - bebió
+#     - alcohol
+
+# - synonym: viaje
+#   examples: |
+#     - viaje
+#     - viajes
+#     - viajar
+#     - viaja
+#     - viajas
+#     - viajado
+
+# - synonym: deporte
+#   examples: |
+#     - deporte
+#     - deportes
+#     - actividad fisica
+#     - actividades físicas
+
+# - synonym: dieta
+#   examples: |
+#     - dieta
+#     - dietas
+#     - comida
+#     - comidas
+
+# - synonym: tratamiento
+#   examples: |
+#     - tratamiento
+#     - tratamientos
+#     - medicamento
+#     - medicamentos
+#     - medicación

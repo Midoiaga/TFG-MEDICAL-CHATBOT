@@ -1,0 +1,591 @@
+version: "3.1"
+
+nlu:
+- intent: afirmar
+  examples: |
+    - ok
+- intent: despedida
+  examples: |
+    - adiós señor, mis mejores deseos para su esposa
+- intent: estado
+  examples: |
+    - ¿cómo estás?
+- intent: motivo_de_consulta
+  examples: |
+    - ¿Por qué viene a urgencias?
+    - hola, ¿por qué has venido a verme?
+    - Buenos dias Entonces ¿Por qué vienes a la sala de emergencias?
+    - ¿qué te hizo consultar?
+    - ¿Por qué vienes?
+    - ¿Por qué vienes?
+- intent: otros
+  examples: |
+    - ¿tiene usted su tarjeta sanitaria?
+- intent: personal_adiccion_alcohol_cantidad
+  examples: |
+    - ¿Cuál es su consumo de alcohol?
+- intent: personal_adiccion_alcohol_describir
+  examples: |
+    - ¿Vino francés?
+- intent: personal_adiccion_alcohol_duracion
+  examples: |
+    - ¿Cuánto tiempo has estado bebiendo?
+- intent: personal_adiccion_alcohol_frecuencia
+  examples: |
+    - ¿bebe regularmente?
+- intent: personal_adiccion_alcohol_otros
+  examples: |
+    - ¿ha dejado de beber alcohol recientemente?
+- intent: personal_adiccion_alcohol_si_o_no
+  examples: |
+    - ¿bebe alcohol?
+    - ¿tomó alcohol?
+- intent: personal_adiccion_fumar_cantidad
+  examples: |
+    - ¿Cuántos cigarrillos al día?
+- intent: personal_adiccion_fumar_duracion
+  examples: |
+    - cuánto tiempo has fumado
+- intent: personal_adiccion_fumar_frecuencia
+  examples: |
+    - ¿fuma regularmente?
+- intent: personal_adiccion_fumar_inicio
+  examples: |
+    - ¿desde cuándo fumas?
+- intent: personal_adiccion_fumar_si_o_no
+  examples: |
+    - ¿fumas?
+    - ¿Cuánto fumas?
+    - ¿fumas?
+- intent: personal_adiccion_otros_describir
+  examples: |
+    - ¿tiene alguna otra adicción?
+- intent: personal_adiccion_otros_si_o_no
+  examples: |
+    - ¿tomas drogas?
+- intent: personal_contacto
+  examples: |
+    - ¿Quién es la persona a notificar?
+- intent: personal_datos_direccion
+  examples: |
+    - ¿vive en una zona con mucha contaminación atmosférica?
+- intent: personal_datos_edad
+  examples: |
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+- intent: personal_datos_fecha_de_nacimiento
+  examples: |
+    - ¿Cuál es su fecha de nacimiento?
+- intent: personal_datos_nombre
+  examples: |
+    - nombre
+    - llamar cómo
+    - su nombre de pila
+- intent: personal_deporte_cantidad
+  examples: |
+    - ¿Cuánto deporte haces durante la semana?
+- intent: personal_deporte_cuando
+  examples: |
+    - ¿has estado nadando recientemente?
+- intent: personal_deporte_describir
+  examples: |
+    - ¿Practica usted algún deporte?
+- intent: personal_deporte_frecuencia
+  examples: |
+    - ¿entrenas regularmente?
+- intent: personal_deporte_si_o_no
+  examples: |
+    - ¿haces ejercicio?
+- intent: personal_dieta_cantidad
+  examples: |
+    - ¿cuál es la cantidad de alcaravea que consume?
+- intent: personal_dieta_cuando
+  examples: |
+    - ¿acabas de comer?
+- intent: personal_dieta_describir
+  examples: |
+    - ¿Cómo es su dieta?
+- intent: personal_dieta_duracion
+  examples: |
+    - cuánto tiempo lleva consumiendo nutrientes
+- intent: personal_dieta_frecuencia
+  examples: |
+    - ¿Comes a menudo comida rápida?
+- intent: personal_dieta_otros
+  examples: |
+    - ok ¿has comido algo especial, no como de costumbre?
+- intent: personal_dieta_si_o_no
+  examples: |
+    - ¿toma usted fibras
+    - ¿está usted en una dieta alta en sodio
+    - ¿comes mucho queso?
+- intent: personal_entorno_describir
+  examples: |
+    - ¿Cuál es su situación familiar?
+- intent: personal_entorno_hijos_edad
+  examples: |
+    - ¿Qué edad tienen?
+- intent: personal_entorno_hijos_nombre
+  examples: |
+    - ¿cuál es el nombre de su hijo de 12 años?
+- intent: personal_entorno_hijos_otros
+  examples: |
+    - ¿están en la escuela?
+- intent: personal_entorno_hijos_si_o_no
+  examples: |
+    - ¿tiene hijos y cuántos embarazos ha tenido?
+    - ¿tiene hijos?
+- intent: personal_entorno_mascota_si_o_no
+  examples: |
+    - ¿alguna mascota?
+- intent: personal_entorno_otros_describir
+  examples: |
+    - cuántas personas viven contigo
+- intent: personal_entorno_otros_si_o_no
+  examples: |
+    - ¿todavía viven tus abuelos?
+- intent: personal_entorno_padres_si_o_no
+  examples: |
+    - ¿Siguen vivos tus padres?
+- intent: personal_entorno_pareja_nombre
+  examples: |
+    - cómo se llama su marido
+- intent: personal_entorno_pareja_si_o_no
+  examples: |
+    - ¿estás casado?
+- intent: personal_fisico_altura
+  examples: |
+    - ¿Cuánto mide usted?
+    - ¿Cuánto mide usted?
+- intent: personal_fisico_peso_cambio
+  examples: |
+    - ¿has perdido peso?
+- intent: personal_fisico_peso_duracion
+  examples: |
+    - llevas mucho tiempo con este peso
+- intent: personal_fisico_peso_peso
+  examples: |
+    - ¿y cuánto pesas?
+    - ¿Cuál es su peso?
+- intent: personal_otros_describir
+  examples: |
+    - estilo de vida
+- intent: personal_otros_si_o_no
+  examples: |
+    - ¿habla usted francés?
+- intent: personal_sueño_describir
+  examples: |
+    - ¿Duerme toda la noche o se despierta durante la noche?
+- intent: personal_sueño_horas
+  examples: |
+    - ¿Duermes demasiado?
+- intent: personal_sueño_si_o_no
+  examples: |
+    - ¿duermes normalmente?
+- intent: personal_trabajo_anterior
+  examples: |
+    - ¿has hecho algún otro trabajo antes de esto?
+- intent: personal_trabajo_describir
+  examples: |
+    - ¿Cuál es su profesión?
+- intent: personal_trabajo_duracion
+  examples: |
+    - ¿Cuánto tiempo lleva trabajando como cuidador de niños?
+- intent: personal_trabajo_horas
+  examples: |
+    - ¿Cuántas horas a la semana trabaja?
+- intent: personal_trabajo_lugar
+  examples: |
+    - ¿Dónde trabajas?
+- intent: personal_trabajo_otros
+  examples: |
+    - ¿llevas cargas pesadas en el trabajo?
+- intent: personal_trabajo_si_o_no
+  examples: |
+    - ¿practica usted el cuidado de los niños?
+- intent: personal_viajes_describir
+  examples: |
+    - ¿has viajado?
+- intent: personal_viajes_otros
+  examples: |
+    - Muy bien... ¿entonces te quedas en Francia qué?
+- intent: personal_viajes_si_o_no
+  examples: |
+    - ha viajado recientemente
+- intent: psiquiatria
+  examples: |
+    - ¿hay algo en particular que le preocupe
+    - ¿tienes la sensación de que las moscas vuelan?
+    - ¿hay alguna preocupación o pensamiento que surja con frecuencia y del que no pueda deshacerse?
+    - ¿es usted fácilmente irritable?
+- intent: psiquiatria_estado de animo_describir
+  examples: |
+    - ¿Eres feliz por naturaleza?
+- intent: psiquiatria_estado de animo_si_o_no
+  examples: |
+    - te sientes confundido
+- intent: saludo
+  examples: |
+    - hola
+    - buenos días señor
+    - hola
+- intent: sintoma_bebe_peso
+  examples: |
+    - ¿Cuál fue el peso del bebé al nacer?
+- intent: sintoma_bebe_si_o_no
+  examples: |
+    - ¿ha tenido el bebé convulsiones?
+- intent: sintoma_entorno_si_o_no
+  examples: |
+    - ¡qué bien! ¿Hay personas a su alrededor que sufren enfermedades respiratorias?
+    - su pareja se queja de dolor en el pecho
+- intent: sintoma_familia_describir
+  examples: |
+    - ¿tiene algún antecedente familiar en particular?
+- intent: sintoma_familia_inicio
+  examples: |
+    - ¿Cuándo tuvo su hijo la varicela?
+- intent: sintoma_familia_si_o_no
+  examples: |
+    - ¿Están todos los miembros de la familia sanos?
+    - alguien de su familia tiene una miopatía
+    - ¿hay antecedentes de artritis en su familia?
+- intent: sintoma_paciente_alergia_describir
+  examples: |
+    - ¿tiene usted alguna alergia?
+    - después de eso, entre todo lo que miramos en internet, todo y cualquier cosa, realmente no te aconsejo es más un fenómeno de ansiedad que otra cosa, creo entonces, ok ¿tienes alguna alergia en particular?
+- intent: sintoma_paciente_alergia_si_o_no
+  examples: |
+    - ¿alergia a los tratamientos?
+- intent: sintoma_paciente_antecedentes_describir
+  examples: |
+    - ¿qué enfermedad tuvo?
+- intent: sintoma_paciente_antecedentes_si_o_no
+  examples: |
+    - has tenido piedras
+    - ¿ha tenido una lesión en la cabeza
+    - ¿has tenido alguna vez este tipo de dolor?
+    - ha tenido alguna vez un traumatismo abdominal que haya requerido hospitalización
+- intent: sintoma_paciente_aparicion_describir
+  examples: |
+    - en qué parte del ciclo menstrual tiene este dolor
+    - ¿tiene estos problemas todo el año o sólo en determinadas épocas o temporadas?
+    - ¿existen circunstancias en las que la erección es normal?
+- intent: sintoma_paciente_aparicion_si_o_no
+  examples: |
+    - ¿se siente hinchado después de comer?
+    - ¿tienes fugas hacia el final de tu ciclo
+    - ¿se orina a veces al toser?
+    - ¿No le duele el pecho cuando hace esfuerzos?
+    - ¿aparece el rojo en el momento de la menstruación?
+    - ¿tu ojo gira hacia dentro cuando estás cansado?
+    - ¿sintió náuseas después del dolor
+    - ¿le resulta difícil oír en un entorno ruidoso?
+    - ¿le resulta difícil ver cuando hay luz artificial intensa?
+    - ¿los dolores pleurales le despiertan por la noche?
+    - los vómitos van precedidos de dolores de cabeza
+    - ¿se siente mareado cuando pasa repentinamente de estar acostado a estar de pie?
+- intent: sintoma_paciente_cambio_describir
+  examples: |
+    - ¿Hay alguna posición que calme este dolor?
+    - cuando te pones en una posición, como la posición fetal, que te acurrucas sobre ti mismo, ¿eso calma un poco el dolor?
+- intent: sintoma_paciente_cambio_si_o_no
+  examples: |
+    - ¿la exposición a los gatos afecta a su dolor?
+    - ¿el dolor disminuye al agacharse?
+    - se alivia el dolor con el ayuno
+    - el dolor empeora al orinar
+    - el café o el té empeoran el dolor
+    - es la sensación de ardor aumentada por la comida picante
+    - sus síntomas de la menopausia han disminuido
+- intent: sintoma_paciente_capacidad_describir
+  examples: |
+    - ¿cuál es el máximo esfuerzo que es capaz de realizar antes de experimentar dificultades respiratorias?
+- intent: sintoma_paciente_capacidad_si_o_no
+  examples: |
+    - puedes doblar las piernas
+    - puedes abrir la boca
+    - ¿es capaz de vaciar bien la vejiga?
+    - ¿es usted capaz de estar sentado durante mucho tiempo sin quedarse dormido?
+- intent: sintoma_paciente_causa_describir
+  examples: |
+    - ¿ha notado qué alimentos desencadenan el dolor?
+    - ¿ha notado qué alimentos le causan dolor?
+    - ¿has notado lo que desencadena tu dificultad para estar de pie?
+- intent: sintoma_paciente_causa_si_o_no
+  examples: |
+    - ¿el dolor es puntuado por las comidas?
+    - el frío desencadena el asma
+    - el paso de la comida le hace toser o atragantarse
+- intent: sintoma_paciente_describir
+  examples: |
+    - ¿tiene algún problema neurológico?
+    - ¿has sentido algo anormal últimamente?
+    - háblame de tus miopatías
+    - ¿notas algún síntoma anormal cuando haces un esfuerzo?
+    - ¿Cómo calificaría su dolor en una escala de 0 a 10?
+    - cuáles son las manifestaciones de sus alergias
+    - ¿Ha cambiado el dolor desde que empezó?
+    - ¿es un dolor fuerte la intensidad?
+    - ¿Cómo fue el dolor brutal ¿agudo?
+    - ¿hay otros signos?
+    - ¿Cuáles son sus síntomas?
+    - ¿Cuáles son sus síntomas?
+    - ¿sufres de algo?
+    - cómo es su asfixia
+    - ¿puede calificar su dolor de 0 a 10?
+    - ¿te duele algo?
+    - ¿Cuánto orina cada vez que orina?
+    - es la catalepsia significativa o discreta
+    - qué tipos de alimentos no pasan
+- intent: sintoma_paciente_duracion
+  examples: |
+    - cuánto tiempo ha tenido condiciones patológicas
+    - ¿cuánto tiempo has estado cansado?
+- intent: sintoma_paciente_embarazo_antecedentes
+  examples: |
+    - es su primer embarazo
+- intent: sintoma_paciente_embarazo_cantidad
+  examples: |
+    - cuántos embarazos ha tenido
+- intent: sintoma_paciente_embarazo_describir
+  examples: |
+    - ¿cómo fueron los embarazos?
+- intent: sintoma_paciente_embarazo_fin
+  examples: |
+    - ¿Cuándo vas a dar a luz?
+- intent: sintoma_paciente_fiebre_describir
+  examples: |
+    - ¿te has tomado la temperatura?
+- intent: sintoma_paciente_fiebre_si_o_no
+  examples: |
+    - ¿tienes fiebre?
+- intent: sintoma_paciente_frecuencia
+  examples: |
+    - ¿Cuántas veces al día vas al baño?
+- intent: sintoma_paciente_inicio
+  examples: |
+    - desde cuándo tiene tuberculosis
+    - desde cuándo tiene dolor abdominal
+    - desde cuándo se nota la pérdida de audición
+    - ¿Cuándo empezó?
+- intent: sintoma_paciente_localizacion_describir
+  examples: |
+    - ¿Tuvo dolor en alguna otra parte? ¿El dolor fue en un sentido o en otro?
+    - ok ok ¿es un dolor fijo o se irradia? bien, ¿afecta a otros lugares?
+    - de acuerdo ¿y se irradió a alguna parte? ¿sentiste el dolor en otra parte? ¿o estaba realmente muy localizado?
+- intent: sintoma_paciente_localizacion_si_o_no
+  examples: |
+    - ¿El dolor se irradia a los brazos?
+    - es el dolor bien localizado
+    - es una puntada en tu costado
+    - ¿Tiene dolor o pesadez en el lado izquierdo debajo de la última costilla?
+- intent: sintoma_paciente_secuela_describir
+  examples: |
+    - ¿Cómo le molesta el dolor en sus actividades sociales?
+- intent: sintoma_paciente_secuela_si_o_no
+  examples: |
+    - ¿afecta su dolor a su familia?
+    - ¿su herida le impide hacer ciertas cosas?
+- intent: sintoma_paciente_seguimiento_describir
+  examples: |
+    - y ¿se le está siguiendo por alguna enfermedad en particular?
+- intent: sintoma_paciente_seguimiento_si_o_no
+  examples: |
+    - está en seguimiento por su hipertensión
+- intent: sintoma_paciente_si_o_no
+  examples: |
+    - ¿causa esto dificultades para respirar?
+    - ¿ha notado que su orina es muy oscura?
+    - le molesta comer fruta
+    - una tos seca
+    - ¿Sientes los brazos pesados?
+    - ¿Su flujo vaginal es rojizo?
+    - las náuseas postoperatorias fueron intolerables al principio
+    - ¿tiene a menudo pérdidas de voz?
+    - ¿ha tenido alguna vez un cuerpo extraño en el oído?
+    - ¿Tienes digestiones dolorosas?
+    - el dolor es continuo, ¿todavía tienes dolor?
+    - es un color turbio
+    - tienes un sabor de boca raro
+    - ¿tienes ardor al orinar?
+    - tiene una disminución del apetito
+    - ¿tiene aura antes de la migraña?
+    - ¿ves luces que giran alrededor de tus ojos?
+    - ¿su piel teme al sol?
+    - presbiacusia, ¿tal vez?
+    - ¿Hay que esperar mucho tiempo para hacer caca?
+    - ¿Tienes palpitaciones?
+    - ha cambiado la fuerza o el tamaño del chorro de orina
+    - ¿ves borroso?
+    - ¿tiene problemas para orinar?
+    - ¿tiene dificultad para tragar al principio?
+    - ¿tiene usted náuseas?
+    - tiene la nariz seca e irritada
+    - ¿tienes alguna vez dificultades para cruzar los brazos?
+    - ¿el dolor está siempre presente?
+    - ¿tiene usted la nariz tapada o que gotea en el mismo lado?
+    - está la zona periarticular hinchada, roja, caliente
+    - ¿sufre problemas de carcinoma?
+    - ¿tiene los ojos rojos, llorosos y le pican?
+    - ¿ha perdido el apetito recientemente?
+    - ¿Su corazón suele latir rápido?
+    - ¿le resulta difícil concentrarse?
+    - ¿algún otro problema, sangrado?
+    - ¿Orinas normalmente?
+    - tiene problemas lumbosacros
+    - ¿tienes dolor de esfuerzo?
+    - ¿tienes una sensación de apriete
+    - ¿tiene problemas de audición?
+    - ¿tienes náuseas?
+    - ¿ningún problema vascular conocido?
+    - ¿Sientes que tu corazón se acelera?
+    - ¿no hay diabetes?
+    - ¿Sangras frecuentemente de las encías?
+    - ¿sufre usted de enfermedades del corazón?
+    - ¿tiene usted visión doble?
+    - ¿tiene gas?
+    - ¿tiene a veces dificultades para abotonarse la camisa?
+    - ¿tiene los músculos tensos?
+    - ¿es necesario empujar para orinar?
+    - ¿siempre tienes que aclararte la garganta?
+    - ¿utiliza el diafragma
+    - has sangrado por el recto
+    - ¿tiene a veces bullas sangrantes en la boca?
+    - ¿tiene un marcapasos o un implante?
+    - es usted muy sensible a la luz
+    - ¿tienes picazón en la nariz?
+    - ¿has tenido alguna vez una caída?
+    - orina unas gotas cada vez que orina
+    - ¿ves destellos de luz?
+    - ¿estás perdiendo sangre en este momento?
+    - cuando exhala, ¿siente siempre que tiene aire en los pulmones?
+    - ¿se le nubla la vista?
+- intent: tratamiento_anticonceptivos_describir
+  examples: |
+    - en qué forma utiliza anticonceptivos
+- intent: tratamiento_anticonceptivos_frecuencia
+  examples: |
+    - ¿Con qué frecuencia utiliza preservativos durante el sexo anal?
+- intent: tratamiento_anticonceptivos_si_o_no
+  examples: |
+    - ¿usas métodos anticonceptivos?
+- intent: tratamiento_consulta_describir
+  examples: |
+    - ¿le sigue otro especialista?
+- intent: tratamiento_consulta_especialista_si_o_no
+  examples: |
+    - ¿No tienes un médico de cabecera?
+- intent: tratamiento_consulta_fecha
+  examples: |
+    - ha ido al médico recientemente
+- intent: tratamiento_consulta_si_o_no
+  examples: |
+    - ¿tiene usted un médico de cabecera?
+- intent: tratamiento_diagnostico_como
+  examples: |
+    - ¿Cómo sabe que su presión arterial es alta?
+- intent: tratamiento_diagnostico_fecha
+  examples: |
+    - ¿Cuándo se realizó un inmunoensayo enzimático?
+- intent: tratamiento_diagnostico_quien
+  examples: |
+    - ¿Quién te ha dicho que tienes hipertensión esencial?
+- intent: tratamiento_diagnostico_si_o_no
+  examples: |
+    - ¿te han dicho alguna vez que tienes una enfermedad de transmisión sexual?
+- intent: tratamiento_historial_describir
+  examples: |
+    - ¿No tiene un historial médico notable?
+- intent: tratamiento_historial_si_o_no
+  examples: |
+    - ¿tiene un historial médico?
+- intent: tratamiento_medicacion_antecedentes
+  examples: |
+    - de acuerdo ¿y ya habías tomado tratamientos antes?
+- intent: tratamiento_medicacion_cuando
+  examples: |
+    - ¿cuándo tomaste el doliprane?
+- intent: tratamiento_medicacion_describir
+  examples: |
+    - ¿otros medicamentos?
+    - ¿ha tomado alguna medicación recientemente?
+    - ¿toma algún medicamento?
+- intent: tratamiento_medicacion_dosis
+  examples: |
+    - ¿a qué dosis?
+- intent: tratamiento_medicacion_duracion
+  examples: |
+    - ¿cuánto tiempo lleva tomando coversyl para la hipertensión?
+- intent: tratamiento_medicacion_frecuencia
+  examples: |
+    - cierto ¿toma tratamientos todos los días? ¿medicamentos?
+- intent: tratamiento_medicacion_motivo
+  examples: |
+    - ¿por qué tomas coversyl?
+- intent: tratamiento_medicacion_otros
+  examples: |
+    - ¿alguna vez te olvidas de tomar tu pastilla?
+- intent: tratamiento_medicacion_receta
+  examples: |
+    - Te recetaré paracetamol
+- intent: tratamiento_medicacion_si_o_no
+  examples: |
+    - ¿has sido anestesiado alguna vez?
+    - de acuerdo ¿no tomas aspirina o?
+    - ¿Intentaste tomar algo para aliviar el dolor?
+- intent: tratamiento_operacion_complicaciones
+  examples: |
+    - ha tenido un problema de ritmo con un marcapasos, desfibrilador cardioversor implantable o implante de holter
+- intent: tratamiento_operacion_describir
+  examples: |
+    - ¿se ha sometido a alguna prueba reciente?
+    - ¿se ha sometido a alguna prueba reciente?
+    - ¿te has operado alguna vez?
+    - ¿se ha operado alguna vez?
+    - ¿se ha operado alguna vez?
+- intent: tratamiento_operacion_dosis
+  examples: |
+    - cuál es su consumo de psicoestimulantes
+- intent: tratamiento_operacion_especialista
+  examples: |
+    - ¿Quién será su cirujano?
+- intent: tratamiento_operacion_fecha
+  examples: |
+    - ¿cuándo se hizo un implante endodóntico?
+- intent: tratamiento_operacion_frecuencia
+  examples: |
+    - ¿se cepilla los dientes a menudo?
+- intent: tratamiento_operacion_motivo
+  examples: |
+    - ¿Por qué quiere quitarte la vesícula?
+- intent: tratamiento_operacion_resultados
+  examples: |
+    - ¿tomó bien la operación de corazón
+    - ha tolerado bien la cirugía de seno frontal
+    - la operación de la glándula mamaria fue bien
+- intent: tratamiento_operacion_si_o_no
+  examples: |
+    - se ha sometido a una orquiectomía
+    - ¿lleva dentadura postiza?
+    - ¿tienes aparatos de ortodoncia?
+    - ¿llevas un mantenedor de espacio
+    - ¿Se ha operado la mano?
+    - ¿usas gafas?
+    - ¿lleva usted un audífono?
+    - ¿se hizo un discograma
+- intent: vida_sexual_describir
+  examples: |
+    - háblame de tu vida_sexual
+- intent: vida_sexual_edad
+  examples: |
+    - ¿Qué edad tenías cuando tuviste tus primeras relaciones sexuales?
+- intent: vida_sexual_frecuencia
+  examples: |
+    - ¿Con qué frecuencia tiene usted relaciones sexuales?
+- intent: vida_sexual_otros
+  examples: |
+    - ha tenido relaciones sexuales bajo la influencia del alcohol o las drogas en el último año
+- intent: vida_sexual_si_o_no
+  examples: |
+    - es usted sexualmente activo

@@ -1,0 +1,14 @@
+version: "3.1"
+
+rules:
+
+- rule: Decir adiós cada vez que el usuario diga adios
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Para usar nuestro modelo
+  steps:
+  - intent: nlu_fallback
+  - action: action_fallback
+

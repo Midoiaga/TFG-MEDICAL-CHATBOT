@@ -1,0 +1,2391 @@
+version: "3.1"
+
+nlu:
+
+- intent: personal_entorno_si_o_no
+  examples: |
+    - ¿vives con gente?
+    - ¿vives acompañado?
+- intent: personal_viaje_describir
+  examples: |
+    - ¿A donde has viajado?
+    - ¿Que tal el viaje?
+- intent: tratamiento_medicacion_cuando_describir
+  examples: |
+    - ¿Cuando tomas la medicacion?
+    - ¿Cuando te medicas?
+- intent: tratamiento_medicacion_cuando_si_o_no
+  examples: |
+    - ¿ Tomas la medicacion a la noche?
+    - ¿ tomas la medicacion a la mañana?
+    - ¿ tomas la medicacion a la tarde?
+
+- intent: afirmar
+  examples: |
+    - ok
+    - sí
+    - ok te revisaré primero
+    - de acuerdo
+    - ok
+    - muy bueno
+    - sí
+    - sí
+    - sí
+    - de acuerdo por lo demás quería volver a hablar contigo
+    - de acuerdo
+- intent: despedida
+  examples: |
+    - sí  adiós
+    - lo veremos más tarde ¡adiós!
+    - adiós
+    - ¡adiós!
+- intent: estado
+  examples: |
+    - ¿cómo estás hoy?
+    - cómo estás
+    - ¿cómo estás?
+    - hola señor  ¿cómo está desde su última visita?
+    - hola, ¿cómo estás?
+- intent: motivo_de_consulta
+  examples: |
+    - ¿Qué te trae por aquí?
+    - hola señor, ¿qué le pasa?
+    - estás muy callado ¿sufres de algo?
+    - hola, que es lo que te lleva a consultar
+    - estás bien, ¿qué te trae por aquí?
+    - ¿Por qué se consulta?
+    - ¿vienes por?
+    - ¿Qué puedo hacer por usted?
+    - ¿Por qué estás aquí?
+    - buenos días señora ¿podría contarme un poco lo que está pasando? ¿por qué está aquí?
+    - ¿Qué te trae por aquí?
+    - qué puedo hacer por usted
+    - ¿Por qué vienes a verme?
+    - tienes que despertar No soy un veterinario ¿Por qué has vuelto a verme?
+    - ¿Por qué vienes a urgencias?
+    - para esta consulta ¿a qué viene?
+    - ¿Qué te trae por aquí?
+    - ¿Por qué vienes a ver a un médico?
+    - ¿Así que ha venido por un problema de oído?
+    - de acuerdo y explícame por qué estás aquí
+    - ¿Cuál es el motivo de su consulta?
+    - ¿Por qué consulta hoy?
+    - ¿motivo_de_consulta?
+    - ¿Por qué vienes a verme hoy?
+    - ¿Por qué estás aquí hoy?
+    - ¿qué te pasa?
+    - ¿Por qué estás aquí?
+    - ¿Cuál es el motivo de su visita?
+    - ¿y por qué has vuelto a verme?
+    - ¿sabes por qué nos reunimos hoy?
+    - ¿Por qué has venido a verme?
+    - hola  entonces  ¿por qué vienes a urgencias?
+    - ¿de qué te quejas?
+    - ¿es este el motivo de su visita?
+    - ¿Qué te trae por aquí?
+    - hola señor  ¿qué le trae por aquí?
+    - hola  entonces  ¿por qué vienes al hospital?
+    - ¿Por qué vienes a verme hoy?
+    - buenos días ¿para qué estás aquí?
+    - hola, ¿qué te trae hoy por aquí?
+    - muy bueno? ¿qué te lleva a consultar entonces?
+    - ¿Por qué viene al hospital?
+    - hola señor, mi nombre es sophie, ¿por qué me visitas hoy?
+    - ¿Por qué consulta hoy?
+    - ¿motivo_de_consulta?
+    - ¿Por qué vienes a verme?
+    - buenos días ¿qué te pasa? ¿qué te trae hoy a urgencias?
+    - ¿Por qué vienes hoy?
+    - hola señora ¿qué le pasa?
+- intent: otros
+  examples: |
+    - no importa ¿Se lo digo a tus hijos?
+    - bien ahora vamos a examinarte un poco, y 
+    - Le pido su tarjeta sanitaria
+- intent: personal_adiccion_alcohol_cantidad
+  examples: |
+    - ¿bebes mucho alcohol?
+    - ¿Cuántos vasos de alcohol al día?
+    - ¿cuánto alcohol bebe?
+    - ¿Cuánto bebes?
+    - ¿Cuántas bebidas con alcohol toma en un día típico de consumo?
+    - ¿Cuántos vasos de alcohol bebe al día?
+- intent: personal_adiccion_alcohol_describir
+  examples: |
+    - ¿Vino francés?
+    - ¿Vino francés?
+    - ¿Vino francés?
+- intent: personal_adiccion_alcohol_duracion
+  examples: |
+    - ¿Cuánto tiempo has estado bebiendo?
+    - ¿Cuánto tiempo has estado bebiendo?
+    - ¿Cuánto tiempo has estado bebiendo?
+- intent: personal_adiccion_alcohol_frecuencia
+  examples: |
+    - ¿bebe usted regularmente alcohol?
+    - ¿bebe de vez en cuando?
+    - ¿Con qué frecuencia bebe 6 o más bebidas en una ocasión concreta?
+- intent: personal_adiccion_alcohol_otros
+  examples: |
+    - ¿ha dejado de beber alcohol recientemente?
+    - ¿ha dejado de beber alcohol recientemente?
+    - ¿ha dejado de beber alcohol recientemente?
+- intent: personal_adiccion_alcohol_si_o_no
+  examples: |
+    - ¿bebe alcohol?
+    - ¿bebes?
+    - ¿estás bebiendo?
+    - ¿Así que no bebes?
+    - y ¿bebes alcohol?
+    - y ¿bebe?
+    - ¿bebe alcohol?
+    - ¿bebe alcohol?
+    - y alcohol?
+    - ¿bebe alcohol?
+    - ¿alcohol?
+    - ¿bebes alcohol?
+- intent: personal_adiccion_fumar_cantidad
+  examples: |
+    - ¿Cuánto fumas?
+    - cuántos cigarrillos al día
+    - ¿Cuánto fumas?
+    - ¿Cuántos cigarrillos al día?
+    - ¿y cuántos cigarrillos al día?
+    - ¿Cuántos cigarrillos al día?
+    - ¿cuántos paquetes?
+    - ¿cuántos cigarrillos?
+    - ¿Cuántos cigarrillos fuma al día?
+    - ¿cuántos cigarrillos al día?
+- intent: personal_adiccion_fumar_duracion
+  examples: |
+    - cuánto tiempo has fumado
+    - ¿Cuánto tiempo llevas fumando?
+    - ¿Durante cuanto tiempo has fumado?
+- intent: personal_adiccion_fumar_frecuencia
+  examples: |
+    - ¿fuma regularmente?
+    - ¿fuma regularmente?
+    - ¿fuma regularmente?
+- intent: personal_adiccion_fumar_inicio
+  examples: |
+    - ¿desde cuándo fumas?
+    - ¿desde cuándo fumas?
+    - ¿desde cuándo fumas?
+- intent: personal_adiccion_fumar_si_o_no
+  examples: |
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumas?
+    - fuma usted
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fumaste alguna vez?
+    - fumar ?
+    - ¿fumar?
+    - ¿fumas?
+    - ¿fumas?
+    - ¿fuma usted?
+    - y ¿fuma?
+    - ¿fumas?
+    - ¿fumas?
+- intent: personal_adiccion_otros_describir
+  examples: |
+    - ¿fumas algo más?
+    - adicciones
+    - ¿tienes alguna adicción?
+    - ¿tiene usted adicciones?
+    - ¿tienes alguna adicción?
+    - adicciones
+    - ¿toma alguna otra sustancia?
+- intent: personal_adiccion_otros_si_o_no
+  examples: |
+    - ¿tomas drogas?
+    - ha tomado alguna vez drogas por inyección
+    - ¿usas drogas?
+    - ¿usas drogas?
+    - ¿usas drogas?
+    - ¿consumes cocaína?
+- intent: personal_contacto
+  examples: |
+    - ¿a quién alertar en caso de necesidad?
+    - quién es la persona a notificar
+    - a quién alertar en caso de necesidad
+    - ¿Quién es su persona de apoyo?
+    - ¿el número de teléfono de tu ex-mujer?
+- intent: personal_datos_direccion
+  examples: |
+    - ¿Dónde vives?
+    - ¿vive en una zona con mucha contaminación atmosférica?
+    - ¿Dónde vives?
+    - ¿vive en una zona con mucha contaminación atmosférica?
+    - ¿Dónde vives?
+- intent: personal_datos_edad
+  examples: |
+    - ¿Cuántos años tienes?
+    - ¿Cuál es su edad?
+    - ¿Cuántos años tienes?
+    - ¿su edad?
+    - ¿Cuántos años tienes?
+    - ¿cuántos años tiene?
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+    - ok ¿y cuántos años tienes?
+    - ¿Qué edad tienes?
+    - ¿Cuántos años tienes ahora?
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+    - ¿Cuántos años tienes?
+- intent: personal_datos_fecha_de_nacimiento
+  examples: |
+    - ¿Cuál es su fecha de nacimiento?
+    - ¿Cuál es su fecha de nacimiento?
+    - ¿puede decirme su fecha de nacimiento?
+    - en qué año naciste
+- intent: personal_datos_nombre
+  examples: |
+    - ¿Cómo te llamas?
+    - ¿Cuál es su apellido?
+    - hola, ¿puedes decirme tu nombre?
+    - ¿Cuál es tu nombre de pila?
+    - ¿Cuál es su nombre?
+    - ¿Cómo te llamas?
+    - tu nombre es ?
+    - ¿Cómo te llamas?
+    - ¿Cómo te llamas?
+    - ¿cuál es tu nombre?
+    - ¿Cuál es su nombre?
+    - ¿puede decirme su nombre?
+    - buenos días señora ¿cómo se llama?
+    - ¿Cuál es tu nombre?
+    - ¿Cuál es tu nombre de pila?
+    - ¿cuál es tu nombre?
+    - simone?
+    - ¿Cuál es su nombre y apellido?
+    - ¿Cuál es tu nombre? ¿Tryphon Sunflower?
+- intent: personal_deporte_cantidad
+  examples: |
+    - ¿Cuánto deporte haces durante la semana?
+    - ¿Cuánto deporte haces durante la semana?
+    - ¿nadas mucho?
+- intent: personal_deporte_cuando
+  examples: |
+    - ¿has estado nadando recientemente?
+    - ¿has estado nadando recientemente?
+    - ¿has estado nadando recientemente?
+- intent: personal_deporte_describir
+  examples: |
+    - ¿haces algún deporte?
+    - ¿haces algún deporte?
+    - ¿haces algún deporte?
+    - ¿ya practica algún deporte?
+    - ¿Has participado alguna vez en una competición deportiva?
+    - ¿haces algún deporte?
+    - ¿haces algún deporte?
+- intent: personal_deporte_frecuencia
+  examples: |
+    - ¿Realiza a menudo actividades físicas?
+    - ¿Realiza a menudo actividades físicas?
+    - ¿corre regularmente?
+- intent: personal_deporte_si_o_no
+  examples: |
+    - ¿montas en bicicleta?
+    - ¿juega usted al tenis?
+    - ¿eres atlético?
+    - ¿haces deporte?
+    - ¿sueles ir a correr?
+    - ¿Es usted físicamente activo en el trabajo?
+    - ¿Es usted físicamente activo?
+    - ¿juegas al baloncesto?
+- intent: personal_dieta_cantidad
+  examples: |
+    - ¿comes mucho?
+    - ¿comes mucho?
+    - ¿comes mucho?
+- intent: personal_dieta_cuando
+  examples: |
+    - ¿acabas de comer?
+    - ¿acabas de comer?
+    - ¿acabas de comer?
+- intent: personal_dieta_describir
+  examples: |
+    - en qué consiste su dieta
+    - describa sus tres comidas habituales (desayuno, comida y cena)
+    - ¿Qué has comido?
+    - muy bien y ¿qué pasa con tu dieta?
+    - cuál es su consumo de patatas
+    - dieta
+    - ¿Cuál es su dieta?
+    - ¿Cuáles son sus hábitos alimenticios?
+    - ¿Cuál es su consumo de aditivos alimentarios?
+- intent: personal_dieta_duracion
+  examples: |
+    - cuánto tiempo lleva consumiendo nutrientes
+    - cuánto tiempo lleva consumiendo nutrientes
+    - cuánto tiempo lleva consumiendo nutrientes
+- intent: personal_dieta_frecuencia
+  examples: |
+    - ¿Comes a menudo chocolate?
+    - ¿Comes a menudo chocolate?
+    - ¿Comes a menudo chocolate?
+- intent: personal_dieta_otros
+  examples: |
+    - ok ¿has comido algo especial, no como de costumbre?
+    - ok ¿has comido algo especial, no como de costumbre?
+    - ok ¿has comido algo especial, no como de costumbre?
+- intent: personal_dieta_si_o_no
+  examples: |
+    - es su dieta rica
+    - ¿bebes zumo de frutas?
+    - ¿llevas una dieta equilibrada?
+    - ¿comes alguna vez berenjena?
+    - ¿tienes una dieta equilibrada?
+    - ¿crees que has comido algo en mal estado?
+    - ¿comes muchas judías?
+    - ¿estás a dieta?
+    - ¿tienes una dieta?
+    - ¿Comes muchos embutidos?
+    - ¿comes uvas?
+    - ¿comes pan?
+    - ¿tiene su dieta un alto contenido en grasas?
+    - ¿tiene su dieta un alto contenido en grasas?
+    - ¿está usted en una dieta sin sal?
+    - ¿comes merluza?
+    - ¿Comes kiwi?
+    - ¿llevas una dieta saludable?
+    - ¿bebes mucha agua?
+- intent: personal_entorno_describir
+  examples: |
+    - ¿tienes muchos amigos, pocos amigos íntimos o ninguno?
+    - cuál es su situación familiar
+    - ¿Cuál es su situación familiar?
+- intent: personal_entorno_hijos_describir
+  examples: |
+    - ¿Cuántos hijos tiene?
+    - ¿cuántos hijos tiene?
+- intent: personal_entorno_hijos_edad
+  examples: |
+    - ¿qué edad tienen sus hijos?
+    - ¿Tiene hijos?
+    - BIEN. ¿Y cuándo tuvo su último hijo?
+- intent: personal_entorno_hijos_nombre
+  examples: |
+    - ¿cuál es el nombre de su hijo de 12 años?
+    - ¿cuál es el nombre de su hijo de 12 años?
+    - ¿cuál es el nombre de su hijo de 12 años?
+- intent: personal_entorno_hijos_otros
+  examples: |
+    - ¿están en la escuela?
+    - ¿están en la escuela?
+    - ¿están en la escuela?
+- intent: personal_entorno_hijos_si_o_no
+  examples: |
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+    - Por cierto, ¿tienes hijos?
+    - ¿Son sus hijos varones?
+    - ¿tiene hijos?
+    - ¿tiene hijos?
+- intent: personal_entorno_mascota_si_o_no
+  examples: |
+    - ¿tiene usted mascotas en casa?
+    - ¿alguna mascota?
+    - ¿alguna mascota?
+- intent: personal_entorno_otros_describir
+  examples: |
+    - cuántas personas viven contigo
+    - cuántas personas viven contigo
+    - cuántas personas viven contigo
+- intent: personal_entorno_otros_si_o_no
+  examples: |
+    - ¿todavía viven tus abuelos?
+    - ¿todavía viven tus abuelos?
+    - ¿fuiste adoptado?
+    - ¿todavía viven tus abuelos?
+    - ¿fuiste adoptado?
+    - ¿fuiste adoptado?
+    - ¿fuiste adoptado?
+- intent: personal_entorno_padres_si_o_no
+  examples: |
+    - ¿Siguen vivos tus padres?
+    - ¿Están vivos tus padres?
+    - ¿Están vivos tus padres?
+- intent: personal_entorno_pareja_nombre
+  examples: |
+    - cómo se llama su marido
+    - cómo se llama su marido
+    - cómo se llama su marido
+- intent: personal_entorno_pareja_otros
+  examples: |
+    - ¿cómo te va con tu pareja?
+    - ¿cómo te va con tu pareja?
+- intent: personal_entorno_pareja_si_o_no
+  examples: |
+    - ¿estás casado?
+    - ¿estás casado?
+    - estás soltero
+    - ¿estás casado?
+    - ¿estás casado?
+    - ¿estás casado?
+    - ¿estás casado?
+- intent: personal_fisico_altura
+  examples: |
+    - ¿Cuánto mide usted?
+    - ¿Cuál es su altura?
+    - y su altura?
+    - ¿Cuánto mide usted?
+    - ¿Cuánto mide usted?
+    - y su altura?
+    - altura
+    - ¿Cuánto mide usted?
+    - ¿Cuál es su altura?
+    - ¿Cuál es su altura?
+    - y su altura?
+    - y su altura?
+- intent: personal_fisico_peso_cambio
+  examples: |
+    - ¿ha perdido peso recientemente?
+    - ¿Pérdida de peso?
+    - ¿has perdido peso?
+    - muy bueno ¿has perdido peso?
+    - ha ganado peso
+    - ¿has perdido peso?
+    - aumentó su peso
+    - ¿Ganancia de peso?
+    - ha cambiado su peso
+    - ¿ha ganado peso últimamente?
+- intent: personal_fisico_peso_duracion
+  examples: |
+    - llevas mucho tiempo con este peso
+    - llevas mucho tiempo con este peso
+    - llevas mucho tiempo con este peso
+- intent: personal_fisico_peso_peso
+  examples: |
+    - ¿Cuánto pesas?
+    - ¿cuál es su peso habitual?
+    - peso
+    - ¿Cuál es su peso?
+    - ¿Cuánto pesas?
+    - y su peso?
+    - ¿Cuál es su peso?
+    - ¿Cuál es su peso?
+    - ¿Cuánto pesas?
+    - ¿Cuál es su peso?
+    - peso
+    - ¿Cuál es su peso?
+    - ¿Cuál es su peso?
+    - peso
+    - cuál es su peso
+    - ¿Cuál es su peso?
+    - es su peso estable
+    - y su peso?
+- intent: personal_otros_describir
+  examples: |
+    - estilo de vida
+    - realiza actividades de ocio
+    - estilo de vida
+    - estilo de vida
+- intent: personal_otros_si_o_no
+  examples: |
+    - ¿habla usted francés?
+    - ¿Cuál es tu color favorito?
+    - tienes un estilo de vida saludable
+    - ¿Cuál es tu color favorito?
+    - ¿Cuál es tu color favorito?
+    - ¿habla usted francés?
+- intent: personal_sueño_describir
+  examples: |
+    - ¿tiene un patrón de sueño regular
+    - cuéntame sobre tu sueño?
+    - ¿Duerme toda la noche o se despierta durante la noche?
+- intent: personal_sueño_horas
+  examples: |
+    - ¿cuántas horas de sueño?
+    - ¿cuántas horas se queda en la cama cada día?
+    - ¿duermes poco?
+    - ¿cuántas horas permanece en la cama al día?
+- intent: personal_sueño_si_o_no
+  examples: |
+    - ¿tomas siestas?
+    - ¿duermes bien?
+    - ¿duermes bien?
+- intent: personal_trabajo_anterior
+  examples: |
+    - ¿has hecho algún otro trabajo antes de esto?
+    - ¿has hecho algún otro trabajo antes de esto?
+    - ¿has hecho algún otro trabajo antes de esto?
+- intent: personal_trabajo_describir
+  examples: |
+    - ¿A qué te dedicas?
+    - ¿Cuál es su trabajo?
+    - ¿cuál era su ocupación?
+    - ¿A qué te dedicas?
+    - ¿Cuál es su ocupación?
+    - ¿A qué te dedicas?
+    - ¿Cuál es su profesión?
+    - bien, ¿cuál es tu trabajo?
+    - ¿En qué campo trabaja?
+    - ¿Cuál es su ocupación?
+    - ¿Cuál es su trabajo?
+    - ocupación
+    - ¿Cuál es su ocupación?
+    - ¿Cuál es su ocupación?
+- intent: personal_trabajo_duracion
+  examples: |
+    - ¿Cuánto tiempo llevas dando clases?
+    - ¿llevas toda la vida haciendo este trabajo?
+    - ¿Cuánto tiempo lleva siendo profesor?
+- intent: personal_trabajo_horas
+  examples: |
+    - ¿Cuántas horas a la semana trabaja?
+    - ¿Cuántas horas a la semana trabaja?
+    - ¿Cuántas horas a la semana trabaja?
+- intent: personal_trabajo_lugar
+  examples: |
+    - ¿Dónde trabajas?
+    - ¿Dónde trabajas?
+    - ¿Dónde trabajas?
+- intent: personal_trabajo_otros
+  examples: |
+    - ¿cómo te va en el trabajo?
+    - ¿cómo te va en el trabajo?
+    - ¿llevas cargas pesadas en el trabajo?
+- intent: personal_trabajo_si_o_no
+  examples: |
+    - ¿practica usted el cuidado de los niños?
+    - ok ¿y trabajas?
+    - ¿practica usted el cuidado de los niños?
+- intent: personal_viajes_describir
+  examples: |
+    - ¿has viajado?
+    - ¿has viajado?
+    - ¿has viajado?
+- intent: personal_viajes_otros
+  examples: |
+    - Muy bien... ¿entonces te quedas en Francia qué?
+    - Muy bien... ¿entonces te quedas en Francia qué?
+    - Muy bien... ¿entonces te quedas en Francia qué?
+- intent: personal_viajes_si_o_no
+  examples: |
+    - ¿Ha hecho un viaje largo en avión o en coche?
+    - ¿Ha viajado recientemente?
+    - ha estado en el extranjero
+    - ha volado recientemente
+- intent: psiquiatria
+  examples: |
+    - cuál es su nivel de comprensión
+    - ¿evita ciertos lugares o situaciones?
+    - ¿qué sientes?
+    - ¿has tenido alguna vez problemas con la ley a causa de tus adicciones?
+    - ¿crees que tienes una importancia excepcional o poderes especiales?
+    - has pensado en hacerte daño
+    - lo que ocurre cuando se está preocupado o disgustado
+    - ¿es usted extrovertido o introvertido?
+    - ¿tienes ganas de hacer daño a otras personas o de vengarte?
+    - ¿notas una sensación de ausencia
+    - has perdido a alguien
+    - ¿tienes un sentimiento de miedo?
+    - ¿piensas en suicidarte?
+    - se describiría como impulsivo, agresivo o tímido
+    - cuéntame tu episodio depresivo
+    - ¿Cómo te sientes hoy?
+    - ¿Cómo te sientes ahora?
+    - eres feliz
+    - ¿Está usted satisfecho con su vida en general?
+    - ¿está usted satisfecho con su trabajo?
+    - ¿qué sientes?
+    - ¿crees que deberías buscar ayuda?
+    - has perdido muchos intereses
+    - ¿qué sientes?
+    - ¿alguna vez te sientes culpable por beber
+    - ¿has estado alguna vez en una situación difícil?
+    - has tenido visiones o has escuchado voces
+    - se siente incómodo
+    - ¿ha ocurrido algo en su vida recientemente?
+    - has perdido un amigo
+    - tu miedo a la muerte ha cambiado
+    - ¿alguna vez tienes comentarios sobre tu forma de beber
+    - ha estado expuesto a experiencias traumáticas
+    - se siente irritable después de un ataque
+    - ¿se enfada a veces con facilidad?
+- intent: psiquiatria_estado de animo_describir
+  examples: |
+    - dime tu estado de ánimo habitual
+    - ¿Cómo está su estado de ánimo en este momento?
+    - ¿cómo te sientes moralmente?
+    - ¿Cómo te sientes hoy?
+    - ¿Cómo te sientes hoy?
+    - dime tu estado de ánimo habitual
+    - ¿Cómo está tu moral?
+- intent: psiquiatria_estado de animo_si_o_no
+  examples: |
+    - está usted relajado
+    - es su estado de ánimo estable
+    - ¿estás de humor inestable?
+    - no estás motivado
+    - se siente deprimido
+- intent: saludo
+  examples: |
+    - buenos días
+    - Hola
+    - hola
+    - hola señor
+    - hola señor
+    - hola señor
+    - hola señora
+    - buenos días señora
+    - buenos días
+    - buenos días
+    - buenos días señora
+    - ¿Qué hay de nuevo?
+    - hola
+    - buenos días,
+    - hola señor
+    - hola alain
+    - hola
+    - hola alain
+    - hola señor
+    - buenos días
+- intent: sintoma_bebe_peso
+  examples: |
+    - ¿Cuál fue el peso del bebé al nacer?
+    - cuál fue el peso del bebé al nacer
+    - ¿Cuál fue el peso del bebé al nacer?
+- intent: sintoma_bebe_si_o_no
+  examples: |
+    - ¿El bebé tenía problemas respiratorios?
+    - ¿El bebé tenía problemas respiratorios?
+    - ¿ha tenido el bebé convulsiones?
+- intent: sintoma_entorno_si_o_no
+  examples: |
+    - su pareja se queja de una enfermedad
+    - ha estado en contacto con personas con el mismo problema
+    - se queja su pareja de una pápula
+    - ¿ha tenido alguna de sus parejas una enfermedad de transmisión sexual?
+    - ha tenido uno de sus compañeros dolor en el dedo del pie
+    - ¿ha tenido alguna vez relaciones sexuales con alguien que podría tener sífilis o gonorrea?
+    - ¿alguna de sus parejas ha tenido dolor de espalda
+    - ¿ha estado expuesto a sustancias tóxicas o en su tiempo libre?
+    - ha estado expuesto a experiencias traumáticas
+    - ¿existe la posibilidad de una exposición reciente a una enfermedad de transmisión sexual?
+    - ¿está usted expuesto a alguna sustancia tóxica?
+    - se queja su pareja de los espasmos
+    - ¿Ha estado expuesto a sustancias tóxicas en su trabajo?
+    - ¿hay algún enfermo a tu alrededor
+    - ¿ha tenido contacto con alguien que pueda tener una enfermedad venérea?
+    - ¿ha tenido alguna de sus parejas una enfermedad de transmisión sexual?
+- intent: sintoma_familia_describir
+  examples: |
+    - ¿tiene antecedentes de enfermedades crónicas en su familia?
+    - ¿Existen enfermedades particulares en la familia?
+    - ¿hay alguna historia particular en su familia?
+    - ¿tiene su familia algún problema de salud?
+    - ¿algún antecedente de enfermedad cardíaca?
+    - ¿Alguna enfermedad particular en su familia?
+    - y en su familia, ¿hay problemas de salud?
+    - ¿algún antecedente familiar?
+    - ¿No hay enfermedades del corazón en su familia?
+    - ¿algún antecedente familiar?
+- intent: sintoma_familia_inicio
+  examples: |
+    - ¿Cuándo tuvo su hijo la varicela?
+    - ¿Cuándo tuvo su hijo la varicela?
+    - ¿Cuándo tuvo su hijo la varicela?
+- intent: sintoma_familia_si_o_no
+  examples: |
+    - ¿alguien de su familia ha tenido alguna vez cáncer de piel?
+    - ¿alguien en su familia tiene tumores de la médula espinal
+    - y derrames cerebrales, ¿hay alguno en tu familia?
+    - ¿algún miembro de su familia padece una enfermedad cardíaca?
+    - ¿hay antecedentes de poliposis en su familia?
+    - ¿alguien de su familia tiene crup?
+    - ¿tienen sus padres buena salud?
+    - ¿hay antecedentes de neuralgia en su familia?
+    - ¿hay antecedentes de convulsiones en su familia?
+    - ¿hay alguien en su familia con Alzheimer?
+    - ¿hay antecedentes de hipofosfatasia en su familia?
+    - ¿Tiene antecedentes familiares ginecológicos?
+    - Me lo imaginaba En casa de tus padres, ¿no hay infartos?
+    - ¿alguien en su familia tiene obstrucción del conducto pancreático?
+    - ¿alguien de su familia tiene leucoedema oral?
+    - ¿tiene antecedentes de enfermedades cardiovasculares?
+    - ¿hay antecedentes de insuficiencia cardíaca en su familia?
+    - ¿alguien de su familia ha tenido alguna vez un bulto en el pecho?
+    - ¿alguien de su familia tiene una infección por salmonela?
+    - ¿y nadie tuvo fiebre en tu casa?
+    - ¿hay antecedentes de neuralgia en su familia?
+- intent: sintoma_paciente_alergia_describir
+  examples: |
+    - ¿tiene usted alguna alergia?
+    - ¿tiene usted alguna alergia?
+    - ¿tiene usted alguna alergia?
+    - ¿tiene usted alergias?
+    - ¿alergias?
+    - ¿no hay alergias?
+    - ¿tiene usted alguna alergia?
+    - ¿tiene alguna alergia en particular?
+    - ¿tiene alguna alergia alimentaria?
+    - ¿tiene usted alguna alergia?
+    - ¿tiene usted alguna alergia?
+    - ¿tiene usted alergia al polen, a las hierbas, a los ácaros o al polvo?
+    - ¿tiene alguna alergia conocida?
+    - ¿tiene usted alguna alergia?
+    - ¿tiene alguna alergia en particular?
+    - ¿no hay otras alergias?
+    - ¿tiene usted alguna alergia?
+    - ¿no hay alergias?
+- intent: sintoma_paciente_alergia_si_o_no
+  examples: |
+    - ¿Es usted alérgico a la penicilina?
+    - ¿es usted alérgico?
+    - ¿es usted alérgico al kiwi?
+    - ¿Es usted alérgico a la penicilina?
+    - ¿No tiene alergia al polen?
+    - ¿alergia al látex?
+- intent: sintoma_paciente_antecedentes_describir
+  examples: |
+    - ¿qué problemas de salud ha tenido?
+    - y en el pasado, ¿ha tenido alguna otra enfermedad?
+    - tuvo alguna enfermedad de niño
+    - ¿ha tenido alguna enfermedad?
+    - en su infancia, ¿tuvo alguna enfermedad?
+    - ¿ha tenido alguna enfermedad antes?
+    - ¿ha tenido alguna enfermedad?
+    - bien ¿tiene alguna enfermedad?
+    - ha tenido alguna enfermedad en particular
+    - ¿has tenido alguna desensibilización
+    - ¿Ha tenido algún problema de salud en particular?
+- intent: sintoma_paciente_antecedentes_si_o_no
+  examples: |
+    - ¿has tenido alguna vez una neumonía?
+    - ¿Ha tenido alguna vez ictericia?
+    - ha tenido alguna vez una fractura
+    - ¿tuvo escarlatina de niño?
+    - cierto ¿nunca has tenido dolor en ese lugar?
+    - ¿has tenido alguna vez este tipo de dolor?
+    - ¿ha tenido alguna vez varicela?
+    - ha tenido alguna vez un traumatismo abdominal que haya requerido hospitalización
+    - ¿tiene antecedentes de enfermedad renal?
+    - ¿ha tenido algún aborto?
+    - bien, de acuerdo ¿has tenido un dolor así antes, o alguna vez?
+    - ¿has tenido alguna vez un dolor así?
+    - ¿alguna vez te has hecho un esguince en esta articulación?
+    - derecho ¿has tenido alguna vez el mismo dolor? ¿has estado enfermo y te ha hecho lo mismo?
+    - ¿has estado alguna vez enfermo?
+    - ha tenido alguna vez un traumatismo abdominal que haya requerido hospitalización
+    - ha tenido alguna vez un traumatismo abdominal que haya requerido hospitalización
+    - ¿Le ha ocurrido alguna vez este dolor?
+    - ¿ha sufrido alguna vez de nerviosismo extremo
+    - ¿Has tenido alguna vez un dolor como este?
+    - ¿alguna vez te has hecho un esguince en esta articulación?
+    - ¿ha sido usted hipertenso?
+    - ¿ha tenido alguna vez problemas de corazón?
+    - y este dolor, ¿lo has experimentado antes?
+    - ¿Has tenido alguna vez un dolor así?
+    - cierto y ¿has tenido alguna vez un dolor así? ¿sabes?
+    - ¿Tiene antecedentes de úlceras?
+    - ¿ha tenido alguna vez dolor en el pecho?
+    - cierto y ¿alguna vez tuviste la piel amarilla? o la conjuntiva de los ojos? ¿alguna vez lo notaste?
+    - ¿tiene usted antecedentes de enfermedad renal?
+    - ¿ha tenido alguna vez un problema de corazón?
+- intent: sintoma_paciente_aparicion_describir
+  examples: |
+    - inicialmente, el dolor, apareció de repente?
+    - ¿En qué momento de su embarazo tuvo un aborto espontáneo?
+    - cuando se tiene dolor en la boca
+    - cuando tienes alucinaciones
+    - ¿el dolor apareció después de hacer algo especial?
+    - en qué circunstancias se producen sus alucinaciones
+    - cuando aparecen estos síntomas
+    - ¿existen circunstancias en las que la erección es normal?
+    - ¿En qué ocasiones se produce la falta de aire?
+    - ¿Sucedió de forma repentina o gradual?
+    - ¿le sangran las encías al cepillarse los dientes o espontáneamente?
+    - cuando se tiene un olor vaginal anormal
+    - ¿has notado algo que acompañe al dolor de pezones
+    - ¿tiene dolor sólo en ciertas posiciones?
+    - cuando se sufre de esta picazón
+    - qué posición provoca su descarga
+    - esta condición apareció de repente o gradualmente
+    - ¿cuándo has tenido dolor de uñas?
+    - ¿cuándo ha tenido molestias en los ojos?
+    - ¿cuándo has tenido una sensación de hormigueo en la boca?
+    - ¿existen períodos específicos de amnesia
+    - ¿se produce este flujo en un momento determinado del ciclo?
+    - ¿Cuándo aparecen los herpes labiales?
+    - la debilidad aparece sólo después de una actividad o ejercicio intenso
+    - en qué circunstancias se producen sus alucinaciones
+    - ¿existen circunstancias en las que la erección es normal?
+    - Me han dicho que has tenido dolor abdominal, ¿puedes explicarme cómo empezó?
+    - ¿Los granos parecen ampollas cuando aparecen?
+    - cuando te duele el estómago
+- intent: sintoma_paciente_aparicion_si_o_no
+  examples: |
+    - ¿se despierta por la noche por dolores en el pecho?
+    - ¿se despierta por la noche a causa de su dolor?
+    - ¿mira fijamente durante un ataque?
+    - ¿has notado sangre en el papel cuando te limpias?
+    - ¿se producen los dolores en reposo?
+    - ¿siente molestias al mover los ojos hacia arriba y hacia abajo?
+    - ¿le pesan más los brazos o están más hinchados durante su periodo?
+    - ¿se te cayó la baba durante el ataque
+    - ¿le duelen los oídos cuando tiene dolor de garganta?
+    - ¿Siente ardor al orinar?
+    - ¿Ha notado alguna hemorragia después de las relaciones sexuales?
+    - ¿hay un sonido de chirrido cuando se moviliza la articulación?
+    - el dolor comenzó de repente
+    - ¿le molesta el dolor por la noche?
+    - ¿se producen escupitajos en determinadas estaciones?
+    - ¿le falta el aire al acostarse?
+    - ¿tiene calambres en los miembros inferiores en reposo?
+    - ¿duele mover la lengua al hablar?
+    - ¿se ve afectado el apetito al orinar?
+    - la sensación de ahogo le despierta por la noche
+    - durante el día, ¿tiene un impulso incontrolable
+    - ¿Vomita mucho después de comer?
+    - ¿se despierta por la noche a causa de su dolor?
+    - ¿tenías zumbidos en los oídos justo antes de acostarte?
+    - ¿te duele la cabeza cuando estás tenso?
+    - tose por la noche
+    - tiene sueño durante el día
+    - ¿tiene usted dolor por la noche?
+    - ¿siente ardor al orinar?
+    - ¿ha orinado en la cama cuando duerme?
+    - ¿tiene usted dificultad para respirar cuando no se esfuerza?
+    - ¿se producen distonías cuando se está molesto?
+    - ¿le sangran las encías cuando se las cepilla?
+    - cuando se moviliza esta articulación, ¿chirría?
+    - fue la aparición de la gota repentina
+    - ¿siente que le falta el aire cuando tose?
+    - ¿tienes sensación de ardor durante el sexo?
+    - Empezó mientras estabas viendo la televisión, ¿verdad?
+    - ¿se siente mareado cuando gira la cabeza?
+    - ¿tiene dolor cuando defeca?
+    - ¿tienes ardor después de comer?
+    - ¿se producen úlceras en la boca después de comer queso?
+    - ¿pasó esto durante su período
+    - ¿tienes dolor durante el sexo?
+    - ¿tienes un dolor hipogástrico similar cuando estás excitado?
+    - ¿Se puede retener la orina al toser?
+    - ¿le resulta difícil mover la lengua cuando habla?
+    - ¿tiene sensación de ardor al levantarse por la mañana?
+    - ¿apretó los dientes durante el ataque
+    - ¿las aftas aparecen después de comer frutos secos?
+    - ¿apretó los dientes durante el ataque
+    - ¿tiene dolor cuando carga el peso de su cuerpo sobre la rodilla?
+    - te quedas sin aliento en reposo
+    - le duele el diente al masticar
+    - ¿se producen úlceras en la boca después de comer comida picante?
+    - ¿se siente usted apretado en su ropa?
+    - ¿se ponen los brazos de color rojo oscuro al colgarlos?
+    - ¿ha tenido alguna vez un flujo purulento al orinar?
+    - le falta el aire después del ejercicio
+    - sudó anoche
+    - ¿le sangran las encías cuando se las cepilla?
+    - ¿tiene dolor en la bursa cuando tiene una erección?
+    - ¿Tuvo esta pérdida de conocimiento durante un ataque de tos?
+    - es tu respiración ruidosa cuando inhalas
+    - ¿Le falta el aire cuando está sentado?
+    - ¿has tenido alguna vez náuseas después del procedimiento?
+    - ¿duele al mover la articulación?
+    - ¿tiene dificultad para respirar cuando hace un esfuerzo?
+    - ¿tiene insomnio transitorio durante el coito?
+    - ¿tiene una sensación de hormigueo o ardor al orinar?
+    - ¿Pierde pequeñas cantidades de orina cuando se ríe o levanta algo?
+    - ¿tiene dolor después de orinar?
+    - ¿tuvo una sensación de chasquido o desgarro cuando se torció la rodilla
+    - ¿el dolor se produce justo después de comer?
+    - ¿este dolor facial se desencadena siempre al tocar la misma zona?
+    - ¿tiene cólicos cuando está de pie durante mucho tiempo?
+    - ¿tienes acidez cuando te agachas?
+    - ¿se produjo el ataque después de un periodo de hiperventilación?
+    - ¿tiene usted ardor al orinar?
+    - ¿te pones azul cuando te esfuerzas?
+    - ¿tiene sensación de ardor al acostarse?
+    - ¿se produce la descarga en determinadas estaciones?
+    - le falta el aire al caminar
+    - ¿el dolor pasó por la noche?
+    - ¿se ponen las piernas de color rojo oscuro cuando están colgadas?
+    - ¿se queda sin aliento cuando es una asociación?
+    - ¿sufre mucho por la noche?
+    - ¿se siente mareado después de un cambio repentino de posición?
+    - ¿siente falta de aire durante el esfuerzo físico?
+    - ¿tiene sensación de ardor al acostarse?
+    - ¿tienes dolor durante el sexo?
+    - ¿todavía te cuesta respirar o es sólo con el esfuerzo?
+    - ¿Roncas mientras duermes?
+    - ¿se producen úlceras en la boca después de comer frutos secos?
+    - ¿tiene usted dolor cuando presiona
+    - ¿Le duele el diente al masticar?
+    - cuando te duele la cabeza, ¿tienes ganas de vomitar?
+- intent: sintoma_paciente_cambio_describir
+  examples: |
+    - ¿Te duele menos cuando te agachas?
+    - ¿hay posiciones que alivien el dolor?
+    - ¿hay una posición en la que se alivia?
+    - ¿se ha lesionado alguna vez el oído?
+    - ¿El dolor se alivia o empeora con el ejercicio?
+    - ¿hay posiciones que alivien el dolor?
+    - ¿hay algo que se pueda hacer para detener el temblor?
+    - algo mejora la erupción
+    - ¿Cómo evoluciona el dolor?
+    - ¿es mejor o peor cuando te levantas por la mañana?
+    - De acuerdo y entonces, aparte de la doliprana, ¿hay alguna posición que te alivie? o algún movimiento que empeore el dolor?
+    - ¿pierde menos sangre o la pierde de la misma manera que antes?
+    - ¿hay algo que calme este dolor?
+    - ¿hay algo que empeore estos síntomas?
+    - ¿hay algún factor que te haga sentir mejor?
+    - e inclinarse hacia adelante por ejemplo, ¿te alivia? ¿hay alguna posición que te alivie?
+    - algo mejora la enfermedad del oído
+    - ¿hay posiciones que alivien el dolor?
+    - ¿hay alguna posición que calme el dolor o no?
+    - ¿hay algo que calme el dolor
+    - ¿mantiene la articulación en una posición determinada para minimizar el dolor?
+    - ¿hay algo que alivie el dolor?
+    - ¿hay algo que alivie este dolor?
+- intent: sintoma_paciente_cambio_si_o_no
+  examples: |
+    - ¿se agravan los síntomas al acostarse de espaldas?
+    - el esfuerzo empeora el dolor
+    - le da alivio si se agacha
+    - el dolor aumenta con la inspiración
+    - el clima frío aumenta estos síntomas
+    - ¿El dolor se agrava con el movimiento de la muñeca y los dedos?
+    - es la acidez estomacal exacerbada por los alimentos fríos
+    - ¿Qué hace que este dolor empeore?
+    - ¿afecta el humo del cigarrillo a sus síntomas?
+    - ¿persiste la diplopía si se cubren los dos ojos?
+    - ¿el dolor empeora al levantar algo pesado?
+    - se alivia el dolor en la posición prona
+    - ¿los dolores de cabeza empeoran al sentarse?
+    - hace que el descanso alivie este dolor
+    - ¿respira más fácilmente con la boca abierta?
+    - el dolor mejora con la defecación
+    - ¿una compresa fría aplicada en la frente alivia el dolor?
+    - ¿el acostarse alivia el dolor?
+    - ¿las comidas picantes empeoran el dolor?
+    - ¿el dolor es más fuerte cuando se respira profundamente?
+    - Las piernas colgantes alivian el dolor
+    - ¿el café o el té empeoran el dolor?
+    - el dolor se alivia con el ejercicio ligero
+    - las molestias empeoran el dolor
+    - ¿el dolor empeora cuando se hace un esfuerzo físico después de una comida abundante?
+    - la leche hace desaparecer la sensación de ardor
+    - ¿y cuando te mueves te duele más?
+    - ¿La hinchazón disminuye al acostarse?
+    - y después de la doliprana ¿el dolor disminuyó?
+    - la inspiración empeora su dolor
+    - la secreción de la fístula aumenta con la comida picante
+    - ¿el dolor desaparece al agacharse?
+    - comer alimentos líquidos reduce este dolor
+    - ¿la falta de sueño afecta a la salud?
+    - la dispepsia se ve afectada por la alimentación
+    - el aire acondicionado empeora estos síntomas
+    - se alivia el dolor después de la defecación
+    - ¿El dolor se agrava con el movimiento de la muñeca y los dedos?
+    - de acuerdo ¿se incrementaba cuando inspirabas muy fuerte? ¿te cortaba la respiración?
+    - su dolor anorrectal aumenta
+    - se alivia el dolor después de la defecación
+    - el dolor mejora con la defecación
+    - ¿desaparece esta rigidez con la actividad física?
+    - su dolor empeora al caminar
+    - toser o estornudar empeora el dolor
+    - empeora con la lluvia
+    - ¿el dolor desaparece al levantar los brazos?
+    - es el dolor afectado por la alimentación o la defecación
+    - es peor cuando te levantas por la mañana
+    - ¿el contacto con perros y gatos afecta a los sofocos?
+- intent: sintoma_paciente_capacidad_describir
+  examples: |
+    - cuántos escalones puedes subir sin agotarte
+    - ¿cuál es el máximo esfuerzo que puede realizar antes de tener dificultades para respirar?
+    - ¿cuál es el máximo esfuerzo que es capaz de realizar antes de tener dificultades para respirar?
+    - ¿Cuántas veces defeca al día?
+    - ¿Cuántos escalones puedes subir sin quedarte sin aliento?
+    - cuántos escalones puedes subir sin cansarte
+- intent: sintoma_paciente_capacidad_si_o_no
+  examples: |
+    - ¿puede flexionar la mano sobre la muñeca lo máximo posible?
+    - puede relajar las piernas
+    - es capaz de retener la orina
+    - ¿puede agacharse y cruzar las piernas delante de usted lo máximo posible?
+    - ¿puede arreglárselas solo?
+    - se puede comer
+    - ¿puede alejar los brazos del cuerpo?
+    - ¿es usted capaz de estar sentado durante mucho tiempo sin necesidad de dormir?
+    - puede estirar las piernas delante de usted
+    - es capaz de abrir su tracto genito-urinario
+    - ¿puede flexionar la mano sobre la muñeca lo máximo posible?
+    - puede masticar su comida
+    - ¿eres capaz de subir un piso (sin parar)?
+    - puedes levantar las piernas
+    - ¿puede extender su brazo por delante?
+    - puede hacer su higiene íntima solo
+    - ¿es usted capaz de estar sentado durante mucho tiempo sin defecar?
+    - puede colocar el talón en la pierna contraria
+    - ¿puede flexionar la mano sobre la muñeca lo máximo posible?
+    - ¿es usted capaz de estar sentado durante mucho tiempo sin dormirse?
+    - se puede dormir en plano
+    - se puede respirar bien por la nariz
+    - ¿es usted capaz de estar sentado durante mucho tiempo sin dormirse?
+    - puede mover el pie
+    - ¿se puede golpear el muslo primero con el dorso de la mano y luego con la palma?
+    - ¿puede estirar las piernas hacia delante?
+    - ¿puede sentarse durante mucho tiempo sin defecar?
+- intent: sintoma_paciente_causa_describir
+  examples: |
+    - por qué estás cansado
+    - ¿tiene usted alguna idea de lo que puede causar la prostatorrea
+    - ¿tiene usted alguna idea de lo que puede desencadenar la prostatorrea
+    - ¿sabe usted lo que causó el sangrado
+    - ¿cuál cree que es la causa de sus síntomas?
+    - ¿Cuál podría ser la causa de su dolor epigástrico?
+    - cuál puede ser la causa de sus cólicos
+    - ¿ha notado qué alimentos le causan dolor?
+    - ¿Hubo algún desencadenante de este dolor?
+    - qué posición provoca su descarga
+    - ¿tiene usted alguna idea de lo que podría estar provocando el adormecimiento de sus párpados
+    - ¿el dolor dental se desencadena por el contacto con el calor, el frío, el azúcar, la presión sobre un diente o la masticación?
+    - ¿tiene usted alguna idea de lo que puede desencadenar la plenitud del pecho
+    - qué posición desencadena su descarga
+    - ¿existen factores desencadenantes de la debilidad muscular?
+    - ¿ha notado qué alimentos desencadenan el dolor?
+    - ¿existen factores desencadenantes del dolor de pecho?
+    - cuál puede ser la causa de su sensación de calor en la boca
+    - ¿hay algo en particular que desencadene estos ataques
+    - qué causa el dolor
+    - ¿existen factores desencadenantes del hormigueo en la lengua?
+    - ¿has notado qué alimentos te provocan vómitos?
+    - ¿te has dado cuenta de lo que desencadena el rubor
+- intent: sintoma_paciente_causa_si_o_no
+  examples: |
+    - las emociones desencadenan tu excitación sexual
+    - ¿Su enuresis es provocada por el esfuerzo?
+    - un esfuerzo desencadena su tinnitus vibratorio
+    - fumar desencadena su espasmo muscular
+    - el polen desencadena la tos
+    - la posición desencadena su dolor
+    - ¿el dolor de cabeza provoca desgarros en el lado donde está el dolor?
+    - el abuso del café hace que sus heces sean grandes
+    - el polen provoca entumecimiento
+    - las emociones causan tu dolor de pecho
+    - el polvo provoca tos
+    - las emociones desencadenan tus palpitaciones
+    - ¿las situaciones angustiosas desencadenan sus molestias pélvicas?
+    - es la falta de aire provocada por el contacto con el frío
+    - el tabaquismo causa su hiperacusia
+    - el abuso del café desencadena sus grandes deposiciones
+    - un esfuerzo desencadena sus palpitaciones
+    - son dolores musculares provocados por el contacto con el frío
+    - el esfuerzo desencadena su enuresis
+    - ¿las situaciones de ansiedad desencadenan su esputo?
+    - el esfuerzo causa su tinnitus vibratorio
+    - el abuso del café desencadena sus signos bucales
+    - las emociones causan tu dolor de pecho
+    - el polen causa su dermatitis
+    - ¿Su problema surge como resultado del estrés emocional?
+    - ¿Su problema surge como resultado del estrés emocional?
+- intent: sintoma_paciente_describir
+  examples: |
+    - a qué huele la orina
+    - ¿tienes algo?
+    - háblame de tu disquecia
+    - ¿el comienzo y el final de las palpitaciones fue repentino o gradual?
+    - ¿tiene algún problema gastrointestinal?
+    - háblame de tus problemas intestinales
+    - ¿tiene algún síntoma?
+    - cuéntame sobre tu enfermedad vulvar
+    - ¿Cuáles son sus síntomas?
+    - puede describir su moco
+    - cuéntame tus problemas de espalda
+    - ¿cómo están tus ligamentos?
+    - es el coágulo grande o pequeño
+    - cuáles son las manifestaciones de sus alergias
+    - ¿es un dolor continuo o intermitente?
+    - ¿Cuál es su presión arterial habitual?
+    - OK ¿Es una meseta de dolor continuo? o hay momentos en los que duele más, es más intenso?
+    - es el dolor continuo o intermitente
+    - ¿algún problema en particular?
+    - háblame de tu dolor de cabeza
+    - ¿Cuál es su presión arterial?
+    - ¿Es la hemorragia espontánea o inducida?
+    - ¿son sus heces negras?
+    - cuéntame tu problema olfativo
+    - ¿Cómo está tu tos?
+    - ¿problemas de salud?
+    - ¿Y el dolor, si tuvieras que calificarlo en una escala?
+    - ¿cuáles son sus dolores?
+    - cómo es el esputo
+    - háblame de tu trastorno cutáneo
+    - ¿Hay otros signos además de este dolor?
+    - ¿Cuántas veces has vomitado?
+    - ¿qué reacciones tiene usted después de comer kiwi?
+    - ¿tiene algún síntoma?
+    - describe su pirexia
+    - ¿tiene alguna señal de advertencia antes del ataque
+    - ¿has notado algo más que acompañe al dolor
+    - cuáles son las manifestaciones de sus alergias
+    - ¿algún problema de salud?
+    - ¿Cómo se siente este dolor?
+    - ¿Y cuánto dolor es?
+    - ¿Es agudo o comenzó gradualmente?
+    - ¿Qué tan fuerte es el dolor?
+    - qué ruido hacen sus articulaciones
+    - ¿ha notado un cambio en el color de su orina?
+    - ¿Cómo están tus ojos?
+    - y ahí, el dolor, ¿fue largo? ¿no pasó?
+    - es el dolor como una descarga eléctrica
+    - ¿qué pasa cuando te esfuerzas?
+    - describe su irritación de las vías respiratorias
+    - ¿siente que orina más o menos de lo habitual?
+    - ¿Cómo son sus períodos?
+    - describa su erupción
+    - cómo es el flujo de orina
+    - ¿Cómo se siente tu dolor?
+    - cómo está tu lengua
+    - háblame de tu disartria
+    - ¿Cómo está tu lengua?
+    - ¿qué síntomas tienes?
+    - ¿tiene algún problema de salud?
+    - ¿ha tenido algún accidente?
+    - cómo es la gangrena de tu dedo seco
+    - ¿tiene usted algún problema ocular?
+    - cómo es su adenoma de células beta
+    - es la diplopía vertical, horizontal u oblicua
+    - cómo está su úlcera de estómago
+    - ¿se siente mal?
+    - síntomas
+    - ¿es un dolor fijo?
+    - cómo está tu lepra
+    - ¿Cuáles son sus quejas sobre la vesícula biliar?
+    - háblame de tu prolapso
+    - ¿El chorro de orina se detiene y vuelve a empezar durante la micción?
+    - ¿Su esputo es claro, mucoso o espumoso?
+    - ¿se queja de algo en particular?
+    - ¿Cuáles son sus síntomas?
+    - ¿cómo describirías el dolor?
+    - ¿Cuál es su presión arterial?
+    - háblame de tu enfermedad lumbosacra
+    - cuando está activo, ¿tiene algún síntoma en particular?
+    - es el dolor continuo o intermitente
+    - ¿has notado algo en tu tránsito
+    - ¿tiene algún otro dolor?
+    - y fue muy doloroso?
+    - ¿Y qué tipo de dolor es?
+    - ¿Cuál es el volumen de su esputo?
+    - cuéntame tu problema de sueño
+    - cuáles son las manifestaciones de sus alergias
+    - ¿tienes dolor en alguna parte?
+    - cuál es su estado general
+    - háblame de tu movimiento paradójico del diafragma
+    - ¿Qué aspecto tienen sus heces?
+    - ¿cómo está tu dolor?
+    - ¿Qué tipo de dolor es?
+    - ¿Describiría sus períodos como ligeros, normales o abundantes?
+    - cuénteme sus problemas de caducidad
+    - y enfermedades menos importantes?
+    - cuéntame tu problema de orina
+    - ¿Cuál es su presión arterial?
+    - ¿Qué intensidad tiene su dolor?
+    - es su sangre de color rojo brillante u oscuro
+    - ¿El dolor es continuo o ha cambiado?
+    - ¿Cuáles son los síntomas cuando se come un kiwi?
+    - ¿Cuáles son sus síntomas?
+    - ¿Es su flujo vaginal amarillento, cremoso, rojizo, marrón oscuro o claro?
+    - ¿Hubo un gran dolor y después hubo un fondo de dolor?
+    - ¿y qué tipo de dolor era?
+    - a qué nivel se atascan los alimentos
+    - ¿Cuál es su presión arterial?
+    - háblame de tus enfermedades estomacales
+    - ¿Cómo fueron los vómitos?
+    - ¿Qué tipo de dolor?
+    - ¿Orina una cantidad normal cada vez que orina?
+    - háblame de tus enfermedades de las costillas
+    - cómo está su úlcera de estómago
+    - En una escala del 1 al 10, ¿cuál es la intensidad de su dolor?
+    - ¿Cuánto orinas?
+    - háblame de tu enfermedad de ovarios
+    - ¿algún otro problema?
+    - ¿Orinas normalmente?
+    - ¿ha notado algún cambio en su vello facial?
+    - cómo es su esputo
+    - ¿tiene algún síntoma neurológico?
+    - ¿Cuál es su nivel de colesterol?
+    - cómo son sus problemas de columna vertebral
+    - ¿tiene alguna enfermedad?
+    - háblame de tu disquecia
+    - a qué huele su orina
+    - ¿tiene algún problema neurológico?
+    - ¿ha notado algún dolor o bulto en los pechos?
+    - háblame de tu enfermedad lumbosacra
+    - ¿tiene algún problema de salud?
+    - es permanente o evoluciona por crisis
+    - cuéntame sobre tu enfermedad vulvar
+    - ¿es tu flujo vaginal espumoso, pegajoso
+    - ¿de qué color es su esputo?
+    - cuéntame tus problemas olfativos
+    - ¿Cómo está tu dolor de oído?
+    - ¿Cuál es su presión arterial?
+    - ¿tiene algún signo de dolor?
+    - cuéntame tu problema urológico
+    - ¿y tienes problemas con tus intestinos en este momento? ¿más de lo habitual?
+    - ¿cuáles son sus síntomas?
+    - ¿Cuáles son los síntomas cuando se come un kiwi?
+    - ¿tienen alguna enfermedad?
+    - ¿Cuáles son sus síntomas?
+    - háblame de tus enfermedades linguales
+    - ¿tiene algún problema de salud en particular?
+    - ¿Las toallas sanitarias están empapadas o sólo manchadas?
+    - ¿algún problema con los movimientos intestinales?
+    - ¿tiene usted problemas dentales?
+    - ¿es una migraña con aura o una migraña clásica?
+    - háblame de tu tumor benigno
+    - ¿no tienes enfermedades?
+- intent: sintoma_paciente_duracion
+  examples: |
+    - ¿Cuánto tiempo lleva sufriendo problemas cardio-torácicos?
+    - ¿cuánto tiempo lleva con dolor?
+    - ¿Duración de los síntomas?
+    - en qué período de tiempo se produjo la pérdida de peso
+    - ¿Cuánto tiempo has tenido problemas con estas verrugas?
+    - ¿Cuánto tiempo lleva con sobrepeso?
+    - Bien ¿Cuánto tiempo llevas con dolor?
+    - cuánto tiempo llevas respirando con retracciones
+    - ¿Cuánto tiempo ha sufrido de dolor crónico?
+    - ¿Cuánto tiempo lleva quejándose de palpitaciones?
+    - en qué período de tiempo se produjo la pérdida de peso
+    - ¿Cuánto tiempo ha tenido este dolor?
+    - ¿Cuánto tiempo ha tenido este dolor?
+    - después de cuánto tiempo desaparece el dolor
+    - ¿cuánto tiempo ha tenido el signo musset
+    - ¿Cuánto tiempo ha sufrido de dolor metatarsal?
+    - cuánto tiempo ha tenido el eritema
+    - ¿Cuánto tiempo ha tenido este dolor?
+    - ¿Cuánto tiempo lleva sufriendo mareos?
+- intent: sintoma_paciente_embarazo_antecedentes
+  examples: |
+    - es su primer embarazo
+    - es su primer embarazo
+    - es su primer embarazo
+- intent: sintoma_paciente_embarazo_cantidad
+  examples: |
+    - ¿ha tenido algún embarazo?
+    - ¿ha tenido algún embarazo?
+    - cuántos embarazos ha tenido
+- intent: sintoma_paciente_embarazo_describir
+  examples: |
+    - ¿cómo fueron los embarazos?
+    - ¿cómo fueron los embarazos?
+    - ¿cómo fueron los embarazos?
+- intent: sintoma_paciente_embarazo_fin
+  examples: |
+    - ¿Cuándo vas a dar a luz?
+    - ¿Cuándo vas a dar a luz?
+    - ¿Cuándo vas a dar a luz?
+- intent: sintoma_paciente_embarazo_otros
+  examples: |
+    - ¿Cuánto duró el parto?
+    - cuál fue el intervalo entre embarazos
+- intent: sintoma_paciente_embarazo_si_o_no
+  examples: |
+    - ha tenido alguna interrupción del embarazo
+    - ha roto aguas
+- intent: sintoma_paciente_fiebre_describir
+  examples: |
+    - ¿Cuál es su temperatura?
+    - ¿te has tomado la temperatura?
+    - ¿te has tomado la temperatura?
+    - ¿Te has tomado la temperatura?
+    - ¿Cuál es su temperatura?
+    - ¿te has tomado la temperatura?
+    - ¿Cuál es su temperatura?
+    - ¿Tuvo fiebre? ¿Se tomó la temperatura?
+    - ¿te has tomado la temperatura?
+- intent: sintoma_paciente_fiebre_si_o_no
+  examples: |
+    - ok ¿tienes fiebre o no?
+    - ¿tienes fiebre?
+    - ¿tiene usted estrías?
+    - ¿ha tenido fiebre?
+    - ¿tienes fiebre?
+    - ¿fiebre?
+    - ¿tiene usted fiebre?
+    - ¿y también tienes fiebre?
+    - ¿fiebre?
+    - y fiebre?
+    - ¿tiene usted fiebre?
+- intent: sintoma_paciente_frecuencia
+  examples: |
+    - ¿tiene la regla regularmente?
+    - ¿Cuántas veces se levantó cada noche para orinar?
+    - ¿Con qué frecuencia tienes alucinaciones?
+    - ¿Cuántas veces al día vas al baño?
+    - ¿Cuántas veces se levanta a orinar cada noche?
+    - ¿le falta a menudo el aire?
+    - ¿le molesta este cansancio a diario?
+    - ¿con qué frecuencia ha tenido que empujar para orinar?
+    - ¿el dolor vuelve periódicamente?
+    - ¿tiene usted cambios de humor más frecuentes
+    - la frecuencia con la que te levantas a orinar por la noche
+    - ¿Con qué frecuencia se levanta a comer cada noche?
+- intent: sintoma_paciente_inicio
+  examples: |
+    - ¿Siempre ha tenido periodos irregulares o es un fenómeno reciente?
+    - ¿Desde cuándo tiene usted trastornos metabólicos?
+    - esputo desde cuando
+    - ¿desde cuándo tiene dolor en el pecho?
+    - ¿desde cuándo tienes problemas con la boca?
+    - ¿Cuándo fue su última menstruación?
+    - ¿desde cuándo tienes estos síntomas?
+    - desde cuándo tiene angina de pecho
+    - desde cuándo tiene los oídos hinchados
+    - ¿Desde cuándo?
+    - ¿Cuándo empezó este dolor de cabeza?
+    - ¿desde cuándo tienes este dolor?
+    - ¿desde cuándo tiene usted una marcha de tropiezo?
+    - y has venido porque te duele el estómago así que dime cuándo empezó
+    - ¿desde cuándo tienes estos síntomas?
+    - desde cuándo tiene miocarditis
+    - desde cuándo tiene problemas de trombocitos
+    - desde cuándo tiene trastornos metabólicos
+    - desde cuándo tiene macroglobulinemia
+    - ¿cuándo has defecado?
+    - desde cuándo tiene cáncer urogenital
+    - ¿Inicio de los síntomas?
+    - desde cuándo tiene dolores de oído
+    - ¿desde cuándo tose?
+    - desde cuándo tienes pérdida de fuerza física
+    - ¿desde cuándo te duele el estómago?
+    - desde cuándo tienes dolor de pies
+    - desde cuándo tiene problemas de ligamentos
+    - ¿Desde cuándo tienes problemas dentales?
+    - a qué edad se desarrollaron sus pechos
+    - desde cuándo tiene dolor en la cavidad pleural
+    - temblando desde cuándo
+    - desde cuándo tiene la visión borrosa o reducida
+    - ¿Cuándo empezó el dolor?
+    - ¿Desde cuándo tiene dolores de estómago?
+    - ¿Desde cuándo tiene dolores de estómago?
+- intent: sintoma_paciente_localizacion_describir
+  examples: |
+    - ¿El dolor está más en un lugar?
+    - en qué lado se opera
+    - para qué arteria
+    - el dolor es fijo o cambia de lugar
+    - ¿Dónde están exactamente los dolores?
+    - ok ¿y hay algún otro lugar donde le duela?
+    - ¿El dolor es difuso o tiene dolor principalmente allí?
+    - donde más duele
+    - puede mostrarme dónde se produce la sensación de hormigueo
+    - ¿Comenzó en la zona epigástrica o en otro lugar y migró?
+    - ¿cuál es la localización exacta del dolor?
+    - ¿puede decirme aproximadamente dónde le duele el estómago?
+    - ¿Qué parte del pecho?
+    - y es un dolor continuo, ¿dónde?
+    - ¿te duele algo en particular?
+    - ¿dónde duele?
+    - ¿dónde duele?
+    - donde tienes sudoración
+    - ¿se extiende el dolor a lo largo del muslo o la nalga?
+    - ¿El dolor y la rigidez se dan siempre en la misma articulación, o hay otras articulaciones afectadas?
+    - ¿Dónde te duele exactamente el estómago?
+    - ok ¿y te duele de dónde?
+    - cuál es la localización del dolor
+    - qué diente duele
+    - donde se produce el hormigueo
+    - ¿el dolor va a otra parte del abdomen, a la espalda, a la izquierda o a la mandíbula?
+- intent: sintoma_paciente_localizacion_si_o_no
+  examples: |
+    - su dolor se concentra en un solo lugar
+    - ¿el dolor va al hombro?
+    - es el dolor detrás del esternón
+    - el dolor se traslada de una articulación a otra
+    - ¿El dolor se irradia a la uretra?
+    - en el estómago ?
+    - ¿El dolor migra de una articulación a otra?
+    - ¿tiene dolor en el foramen magnum?
+    - el dolor se extiende hacia arriba
+    - ¿Tiene el dolor un camino?
+    - ¿El dolor se irradia?
+    - el dolor se extiende hacia abajo
+    - el dolor se extiende hacia abajo
+    - en el esófago?
+    - afectó sólo a un lado del cuerpo
+    - en la cabeza?
+    - el dolor se irradia hacia adelante
+    - el dolor se irradia hacia arriba
+    - tiene una sensación de aplastamiento en la garganta
+    - ¿El dolor migra de una articulación a otra?
+    - ¿y tienes dolor en otra parte en la espalda?
+    - ¿estaba la garrapata adherida a alguna parte de su cuerpo cuando la encontró?
+    - ¿el dolor baja por la pierna?
+    - ¿Y el dolor se irradia?
+    - Dices que es epigástrico en la jerga médica, ¿va hacia la espalda, va hacia los hombros?
+    - ¿El dolor se irradia a las mandíbulas?
+    - más bien centrado en el epigastrio ¿es un dolor que se irradia?
+    - es el dolor de cabeza localizado en la parte posterior del cráneo
+    - ¿El dolor se extiende de atrás hacia adelante?
+    - ¿se va a otro lugar se irradia?
+    - tiene una punzada en los ojos
+    - ¿El dolor se irradia a la muñeca izquierda?
+- intent: sintoma_paciente_secuela_describir
+  examples: |
+    - le causa alguna molestia funcional
+    - ¿tiene su enfermedad pancreática alguna repercusión laboral?
+    - ¿tiene su intoxicación un impacto en su vida familiar y profesional?
+    - ¿tiene su adicción un impacto en su familia y en su trabajo?
+    - cómo le molesta el dolor en casa
+    - qué actividades se le hacen imposibles debido a sus dificultades de excitación sexual
+- intent: sintoma_paciente_secuela_si_o_no
+  examples: |
+    - ¿afecta su aterosclerosis a sus actividades diarias?
+    - ¿afecta su dolor a su familia?
+    - ¿El dolor le impedía comer?
+    - el dolor te obliga a parar
+    - ¿Interfiere el tumor en las actividades diarias?
+    - ¿su falta de aire le impide hacer ciertas cosas?
+    - ¿le molesta su problema en su vida diaria?
+    - ¿afecta su anemia a su trabajo?
+    - este problema le molesta en el trabajo
+    - ¿Interfiere la gastroenteritis en las actividades diarias?
+    - ¿sus problemas de visión le impiden hacer ciertas cosas?
+    - ¿La debilidad afecta su habla?
+    - ¿sus síntomas le impiden dormir por la noche?
+    - ¿La debilidad afecta su habla?
+    - ¿afecta su cambio de hábito de tránsito a su trabajo?
+    - ¿Interfiere su fatiga en su vida diaria?
+    - ¿afecta su dolor a su familia?
+- intent: sintoma_paciente_seguimiento_describir
+  examples: |
+    - es la primera vez que nos vemos ¿se le está haciendo un seguimiento por alguna patología conocida?
+    - es la primera vez que nos vemos ¿se le está haciendo un seguimiento por alguna patología conocida?
+    - es la primera vez que nos vemos ¿se le está haciendo un seguimiento por alguna patología conocida?
+- intent: sintoma_paciente_seguimiento_si_o_no
+  examples: |
+    - está en seguimiento por su hipertensión
+    - está en seguimiento por su hipertensión
+    - está en seguimiento por su hipertensión
+- intent: sintoma_paciente_si_o_no
+  examples: |
+    - su voz se vuelve ronca
+    - ¿tienes gas esta mañana?
+    - ¿tiene la sensación de tener granos de arena en el ojo?
+    - ¿Tiene la sensación de tener la vejiga llena o de tener pérdidas frecuentes?
+    - ¿sufre de enfermedades capilares?
+    - ¿tiene usted poco olfato?
+    - ¿alguna vez tiene dificultades para escribir?
+    - ha cambiado su voz
+    - ¿hay que esperar mucho tiempo para tragar?
+    - ¿ha tenido hinchazón en el tobillo
+    - ¿tiene sensaciones de hormigueo?
+    - ¿tiene dolor al defecar?
+    - ¿sufre de enfermedades de las encías?
+    - ¿ha notado alguna vez una ausencia o fallo en el habla
+    - ¿tiene una enfermedad intestinal?
+    - ¿neumonía?
+    - es un dolor pulsante
+    - ¿tiene los pechos hinchados?
+    - sensibilidad abdominal
+    - ¿Falta de aire?
+    - ¿ha tenido varices durante su embarazo?
+    - ¿hay sangre en el vómito?
+    - tiene problemas endolinfáticos
+    - ¿tiene alucinaciones sensoriales o espaciales?
+    - ¿le resulta difícil hablar
+    - ¿Recibió recientemente un golpe en el costado de la rodilla
+    - ¿vas al baño normalmente?
+    - ¿te enfadas fácilmente?
+    - le ha picado un insecto
+    - es su disnea aumentada
+    - ¿ha tenido algún desmayo o ha perdido el conocimiento?
+    - ¿tiene problemas de piel?
+    - ¿tiene ataques al hígado?
+    - ¿tiene usted el colesterol alto?
+    - ¿has notado arena en tu orina?
+    - ¿se muerde a veces la mejilla?
+    - ¿tiene dificultades para pronunciar las vocales?
+    - ¿No había sangre en el vómito?
+    - tiene la piel tensa
+    - ¿tiene una enfermedad crónica?
+    - ¿Sufres de falta de motivación?
+    - ¿estás sudando?
+    - ¿tiene piedras en el hígado?
+    - ¿tienes que forzarte a orinar?
+    - muestra signos de somnolencia
+    - ¿tiene usted una enfermedad de la columna vertebral?
+    - ¿Recibió un golpe en el pecho?
+    - ¿A veces te duele el corazón?
+    - ¿experimentas incontinencia urinaria?
+    - cierto ¿y ahora te duele otra vez?
+    - ¿sufre de anorexia?
+    - ¿tiene usted sofocos?
+    - ¿se suprimen las ampollas?
+    - ¿tiene usted flujo uretral?
+    - ¿ha tenido alguna vez problemas de columna?
+    - ¿Ha tenido ablación instrumental?
+    - ¿sientes que tu tobillo está cediendo?
+    - ¿sufre problemas de menopausia?
+    - tiene el poder del spray cambiado
+    - es el poder del chorro bueno
+    - ¿tiene usted a veces dificultades para colocar las cosas
+    - ¿tiene la impresión de tener los tobillos hinchados?
+    - ¿tiene usted granos de herpes?
+    - ¿tiene dificultades para encontrar sus palabras?
+    - ¿tiene usted un flujo anormal?
+    - es un dolor punzante
+    - ¿ves borroso?
+    - ¿te cansas fácilmente?
+    - es tu voz más grave
+    - ¿tiene usted diarrea?
+    - ok ¿tienes alguna patología como presión arterial, diabetes?
+    - te sientes entumecido?
+    - ¿suele tener la nariz llena?
+    - ¿escupes?
+    - te tiemblan los brazos y las piernas
+    - has tenido gusanos
+    - tiene la nariz tapada
+    - ¿siente que uno de sus dientes toca antes que los otros al cerrar
+    - con escalofríos, o?
+    - ¿ha tenido problemas para tragar?
+    - ¿hay costras en la descarga?
+    - ¿tuvo sudores fríos justo antes de desmayarse?
+    - ¿le resulta difícil tragar?
+    - ¿estás estreñido?
+    - ¿tiene usted picores en los pezones?
+    - ¿tiene dificultades para encontrar palabras?
+    - ¿te duele la nariz?
+    - ¿tiene problemas respiratorios?
+    - es su orina de color
+    - ¿tiene problemas de presión arterial, diabetes, colesterol?
+    - tiene el poder del chorro cambiado
+    - era el dolor intolerable al principio
+    - ¿tiene signos de abstinencia?
+    - ¿ha tenido alguna pérdida de orina después del ataque
+    - ¿ha tenido alguna vez distonía cervical?
+    - ¿Te duele la dentadura postiza?
+    - tiene la impresión de una descarga eléctrica
+    - ¿tiene una hemorragia o flujo ginecológico anormal?
+    - era maloliente
+    - ha orinado sangre
+    - ¿está sucio su esputo?
+    - ¿tiene usted un problema de menopausia?
+    - es un dolor de torsión
+    - ¿tiene alguna vez dificultades para levantarse de la cama o de una silla?
+    - ¿te aprieta menos la ropa que antes?
+    - ha aumentado su apetito
+    - ¿ha tenido alguna hemorragia desde que tuvo la menopausia?
+    - están ambas rodillas afectadas
+    - ¿tiene usted picor o dolor vaginal?
+    - ¿tiene dificultades para oír en un entorno ruidoso?
+    - ¿tiene dolores articulares?
+    - ¿sufre problemas de defecación?
+    - ¿sufre de sequedad vaginal?
+    - ¿tiene usted diabetes?
+    - tiene una disminución de la fuerza muscular
+    - ¿tiene alguna otra enfermedad?
+    - ¿tiene usted orgasmos?
+    - sufres de vomitos?
+    - ¿tiene dificultad para vaciar la vejiga?
+    - ¿has tenido un derrame cerebral?
+    - ¿ha tenido una hemorragia nasal recientemente?
+    - es un dolor pulsante
+    - ¿te has quedado sin aliento?
+    - ¿Se siente pesado después de una comida rica en grasas?
+    - ¿notó una hinchazón en la cavidad axilar izquierda
+    - ¿diarrea?
+    - ¿has estado sudando? ¿cosas así?
+    - Tiene dolor abdominal, ¿es eso?
+    - ¿tiene sangre en el esputo?
+    - ¿ha experimentado algún efecto secundario al tomar estos medicamentos?
+    - ¿tiene usted sangrado frecuente de las encías?
+    - ¿Sientes un nudo en la garganta?
+    - ¿tiene usted ilusiones visuales, auditivas o gustativas?
+    - ves doble
+    - ¿hay ampollas?
+    - ¿tiene usted apetito?
+    - ¿tiene usted acidez de estómago?
+    - ha tenido una dislocación
+    - ¿tiene usted picores en las venas de los miembros inferiores?
+    - es una tos severa
+    - ¿tiene dificultades para ir al baño?
+    - ¿tiene episodios de asfixia?
+    - ¿tiene usted dolor en el pecho?
+    - ha aumentado el tamaño de su cráneo o mandíbula
+    - ¿las ganas de defecar te despiertan por la noche?
+    - ¿has notado algún cambio en tu tolerancia al frío
+    - ¿el dolor va acompañado de vómitos?
+    - ¿notó una hinchazón en la cavidad axilar izquierda
+    - vomitó sangre
+    - pierde la conciencia
+    - ha tenido erupciones justo antes de las condiciones eritematosas
+    - era todo el esputo con sangre
+    - has tenido una menopausia joven
+    - ¿tiene una erección de inmediato?
+    - ¿siente que su corazón falla?
+    - vomita deliberadamente
+    - ¿ves a veces anillos brillantes
+    - ¿siente como si su corazón se hubiera detenido momentáneamente
+    - es el dolor acompañado de enrojecimiento facial
+    - es un calambre
+    - es un dolor punzante
+    - ha perdido coágulos o restos de tejido
+    - ¿Te duele el pecho?
+    - es tu voz más baja
+    - tienes dolores de cabeza?
+    - es usted muy sensible a la luz
+    - tiene problemas de fisuras
+    - es un dolor intermitente
+    - ¿tiene usted manchas rojas en las piernas?
+    - ¿Orinas normalmente?
+    - ¿cree que tiene dificultades para oír?
+    - ¿Tiene secreción de los pezones?
+    - ha tenido alguna vez problemas de salud mental
+    - ¿te duele la cabeza?
+    - ¿ha defecado desde que tuvo el dolor?
+    - ¿tiene usted acidez de estómago?
+    - ha orinado alguna vez sangre
+    - tiene regurgitación
+    - ¿ha tenido ataques de fiebre?
+    - ¿no hay problemas respiratorios?
+    - ¿ha tenido recientemente sinusitis?
+    - ¿tiene algún dolor en las articulaciones?
+    - heces duras
+    - ¿Sangras mucho?
+    - ¿has tenido hemorragias nasales?
+    - ¿Tienes otras alucinaciones visuales?
+    - tiene una disminución del flujo de orina
+    - ¿tiene usted lipotimia?
+    - ¿tiene dolor en el músculo bíceps?
+    - ¿tiene usted diabetes?
+    - ¿presión arterial alta?
+    - ¿se inclina el ojo hacia la nariz?
+    - fue su tos productiva
+    - ¿nunca estás enfermo?
+    - ¿sufre de asfixia?
+    - ha cambiado su malestar
+    - ¿siente que le sobresale un diente?
+    - ¿tus articulaciones dolorosas están calientes?
+    - ¿siente que la habitación gira o se balancea?
+    - ¿ha sido alguna vez incapaz de orinar a pesar de las fuertes ganas de hacerlo?
+    - ¿sufre de dolor en la capa endolinfática de la hoja espiral?
+    - ¿sufre una enfermedad de las costillas?
+    - es el poder del chorro estable
+    - ¿ha utilizado mucho el brazo últimamente?
+    - ¿tiene la sensación de tener el recto lleno?
+    - ¿tiene asperezas en la mucosa oral?
+    - ¿ha tragado algo que pueda haberse obstruido en la garganta?
+    - ¿sufre de dolor de cuello?
+    - ¿ha tenido algún movimiento involuntario
+    - ¿se siente bien descansado cuando se levanta por la mañana?
+    - ¿ha tenido adormecimiento facial
+    - es el dolor de los cólicos
+    - ¿las ganas de defecar te despiertan por la noche?
+    - ¿Orinar después del síncope?
+    - ¿tiene una sensación repentina de chasquido en el hombro con dolor intenso?
+    - ¿tiene usted dolor en los genitales?
+    - ¿has tenido un sonido de crack?
+    - ¿tiene usted mucosidad?
+    - ¿alguna vez te sientes mareado?
+    - le molesta la luz
+    - ¿pierde orina?
+    - ¿sufre de ardor retroesternal?
+    - ¿tiene usted la nariz que gotea?
+    - ¿tiene zumbido en los oídos?
+    - ¿sufre de problemas intestinales?
+    - ¿tiene dolor en las sienes?
+    - ¿tiene sensación de ardor?
+    - ¿tiene usted a veces migrañas?
+    - ¿tiene diabetes, hipertensión?
+    - ¿tiene dificultad para masticar o tragar?
+    - ¿tiene usted diabetes?
+    - ¿ha tenido amígdalas recientemente?
+    - es una tos seca
+    - ¿Tiene esputo?
+    - ¿has tenido alguna vez un sudor frío?
+    - ¿te resulta difícil hacer deporte?
+    - ¿sufre usted de problemas arteriales?
+    - tuvo la impresión de una amputación de su campo visual
+    - puede ver bien a corta distancia
+    - ¿tiene usted una deformación de la columna vertebral?
+    - ¿sufre de enfermedades de las encías?
+    - ha cambiado la forma de su nariz
+    - te falta el aire
+    - ¿se puede vaciar completamente la vejiga?
+    - ¿Así que todavía te duele en este momento?
+    - ¿Sientes que tu corazón está fallando?
+    - ¿tiene una sensación de hinchazón en la cara
+    - ¿tiene taquicardia?
+    - ¿hay pus o flujo sanguíneo asociado?
+    - ¿No hay dolor?
+    - has estado sudando
+    - ¿Alguna vez toses?
+    - son sus esputos espesos
+    - ¿tiene a veces secreción ocular?
+    - ¿tiene usted diarrea?
+    - ¿Tienes un estómago de madera
+    - hay hinchazón en la rodilla
+    - ¿sientes los tobillos hinchados?
+    - ¿No vomitaste después de eso?
+    - ¿tiene problemas de mandíbula?
+    - ¿Puede ver los objetos con claridad desde la distancia?
+    - ¿alguna vez te despiertas jadeando?
+    - ¿tiene a veces ardor en los ojos?
+    - ¿tienes problemas con los movimientos intestinales?
+    - ¿tiene alguna enfermedad intestinal?
+    - ¿has notado un bulto en tu ombligo
+    - ¿has notado algo que acompañe al dolor de espalda
+    - Trastornos del habla y del lenguaje
+    - ¿has hecho alguna vez mucosidad o pus?
+    - cuando eras un niño, ¿estaban tus dos testículos bien descendidos en la bursa
+    - le molesta comer, hablar o dormir
+    - ¿es su orina más abundante de lo habitual?
+    - ¿Tuvo vómitos o no?
+    - ¿tiene usted una enfermedad intestinal?
+    - ¿Ha tenido alguna hemorragia?
+    - aparece la sangre al principio
+    - dolor episódico
+    - ¿tienes dolor de estómago?
+    - ¿tienes la cabeza de lado?
+    - y escalofríos?
+    - ¿Es su flujo vaginal de color marrón oscuro?
+    - ¿tiene usted la presión arterial alta?
+    - ha aumentado el tamaño de su cráneo o mandíbula
+    - ¿tienes buen apetito?
+    - es un dolor intermitente
+    - ha cambiado su visión
+    - has perdido la orina
+    - ¿oyes bien?
+    - ¿Es su flujo vaginal espumoso?
+    - ¿ha notado que sus heces están descoloridas?
+    - ¿Está su diabetes equilibrada?
+    - ¿tiene entumecimiento o pérdida de sensibilidad en la pierna?
+    - orina una gran cantidad cada vez que orina
+    - ¿Sangras entre periodos?
+    - le gotea la nariz o se bloquea
+    - ¿has vomitado?
+    - es un dolor agudo
+    - ¿hay coágulos de sangre?
+    - vomita alimentos reconocibles
+    - ¿has recibido alguna vez un golpe
+    - y ¿ha tenido alguna enfermedad en particular? ¿diabetes?
+    - ¿te bronceas fácilmente?
+    - ¿Sin diabetes? ¿Sin colesterol? ¿Sin presión arterial?
+    - ¿tiene usted los dientes débiles o flojos?
+    - ¿tiene usted asma?
+    - ¿ha experimentado alguna vez períodos prolongados de excitación o euforia
+    - ¿tiene usted la pantorrilla hinchada?
+    - orina en grandes cantidades
+    - ¿tiene problemas urinarios?
+    - ¿varía su micción con el tiempo?
+    - ¿tiene algún problema de cólico hepático?
+    - le temblaron las piernas y los brazos
+    - ¿Tiene dolor epigástrico?
+    - ¿tiene dificultades para pronunciar claramente ciertas palabras?
+    - ¿tiene usted insuficiencia cardíaca?
+    - ¿tiene problemas senológicos?
+    - ¿Todavía te duele?
+    - le resulta difícil tragar
+    - ¿tiene usted trastornos del gusto?
+    - ¿tiene usted entumecimiento?
+    - ¿tiene usted grandes dificultades para formar palabras
+    - ¿sufre un problema digestivo?
+    - ¿has defecado?
+    - ok ¿tienes ganas de vomitar?
+    - puede predecir el dolor de costado
+    - ¿ha tenido ataques de tos?
+    - tienes frío
+    - ha tenido una infección de adenoides
+    - te has golpeado la cabeza
+    - ¿Le molesta la luz o el ruido?
+    - ¿hipertensión?
+    - ¿tiene usted dolor de espalda?
+    - ¿Tiene otros signos digestivos, por ejemplo diarrea, o ha vomitado?
+    - ¿le faltan dientes?
+    - ¿se siente como un calambre doloroso?
+    - es un dolor crónico
+    - ¿has tenido que forzarte para terminar de orinar?
+    - no tiene suficiente saliva
+    - ¿podías oír lo que ocurría a tu alrededor?
+    - ¿tiene usted una enfermedad timpánica?
+    - era purulento
+    - ¿tiene usted diplopía?
+    - es un dolor continuo
+    - ¿tiene usted dolor de muelas?
+    - ¿tiene usted la nariz seca?
+    - ¿Es su flujo vaginal acuoso?
+    - ¿tiene que empujar para defecar?
+    - ¿presión arterial alta?
+    - hablar te cansa
+    - ¿tiene usted problemas de hipotálamo?
+    - ¿dolor de cabeza?
+    - es su capacidad de oír reducida
+    - ¿tiene fiebre?
+    - ¿tiene usted sed a menudo?
+    - ¿sufre de palpitaciones?
+    - es usted extremadamente sensible a la luz
+    - ¿tiene usted dolores de cabeza?
+    - ¿sí? ¿no vomitaste, si no?
+    - ¿has notado alguna vez un bulto en el cuello
+    - cierto ¿diarrea? ¿cosas así?
+    - ¿tiene dolores en el pecho?
+    - ¿tiene usted hemorragias entre períodos?
+    - ¿tiene dificultad para orinar?
+    - y a nivel de tránsito, ¿tuvo diarrea?
+    - ¿ha tenido algún movimiento inusual
+    - ¿se te rompen las uñas con facilidad?
+    - ¿sientes náuseas?
+    - ha ingerido accidentalmente un producto tóxico
+    - ¿Es su flujo vaginal espeso?
+    - ¿tiene dificultades para montar en bicicleta?
+    - ¿tiene una sensación dolorosa de hambre?
+    - ¿estás casado?
+    - ¿se te cae el pelo?
+    - ¿has tenido un sonido de crack?
+    - ¿siente a veces como si su rodilla se bloqueara
+    - ¿náuseas?
+    - ¿siente algún problema respiratorio?
+    - Bien ¿Tuvo náuseas? ¿Vómitos?
+    - siempre tienes sed
+    - tenía sangre en la superficie
+    - suele ver normalmente
+    - enfermedad
+    - ¿sufre de dolor en las vértebras torácicas?
+    - ¿tiene esputo amarillo?
+    - era la ascitis intolerable al principio
+    - derecho ¿has vomitado?
+    - ¿se siente mareado?
+    - ¿No había sangre?
+    - estás cansado
+    - ¿tiene usted ampollas de fiebre?
+    - ¿Tienes problemas con tus dientes?
+    - sus dolores tienden a progresar
+    - ¿ha notado alguna deformidad en sus articulaciones
+    - ¿ha notado alguna vez una gota en el extremo del pene justo antes de orinar?
+    - ¿Es su flujo vaginal blanquecino?
+    - ha tenido movimientos involuntarios
+    - ¿varía su audición con el clima?
+    - ¿alguna vez tienes los ojos inyectados en sangre?
+    - ¿ha tenido alguna vez síntomas depresivos?
+    - ¿has notado algún cambio en tu tolerancia al frío
+    - ¿se quema usted fácilmente con el sol?
+    - ¿la lactancia materna te cansa?
+    - ¿tiene problemas para orinar?
+    - ha tenido problemas digestivos recientemente
+    - ¿le resulta difícil estar de pie o caminar sin ayuda?
+    - ¿sufre de dolor en el sistema vomeronasal?
+    - era la sangre acompañada de ardor
+    - ¿tienes escalofríos?
+    - ¿tienes dolor de garganta?
+    - estás mareado
+    - ¿Sangras fácilmente de las encías?
+    - ¿Dolor en el pecho?
+    - ¿le resulta difícil evacuar las heces?
+    - pica el sarpullido
+    - tuvo problemas menstruales
+    - ha cambiado la fuerza del chorro
+    - ¿ha tenido alguna vez bloqueos articulares?
+    - ¿tiene usted ataques de ansiedad recurrentes e imprevisibles?
+    - ¿usas el síndrome de abstinencia?
+    - ¿siente que su vejiga está completamente vacía?
+    - ¿ve usted alguna vez destellos de luz
+    - ¿sientes las piernas pesadas?
+    - no hay tos en la actualidad?
+    - ¿Son sus heces descoloridas?
+    - ¿tienes dolor?
+    - ¿ha tragado algo que pueda haberse obstruido en la garganta?
+    - ¿tiene fiebre?
+    - ¿estás sufriendo?
+    - ¿Es su flujo vaginal verdoso?
+    - ¿estás tosiendo?
+    - ¿tiene problemas con la epiglotis?
+    - ¿le cuesta a veces ir al baño a tiempo?
+    - ha disminuido su apetito
+    - ¿has sufrido abusos físicos?
+    - ha tenido alguna pérdida de sangre reciente
+    - ¿sufre de mareos?
+    - ¿tiene llagas en la boca o en los genitales?
+    - ¿sudan ustedes profusamente de forma similar cuando están excitados?
+    - es un dolor ardiente
+    - ¿tiene usted enfermedades de las encías?
+    - vomitó posos de café
+    - ¿sufre usted de dolores de celda hct116 alguna vez
+    - ¿sientes un hormigueo?
+    - ¿Vomita a menudo?
+    - ¿tiene una sensación de extrañeza?
+    - ¿sientes una sensación de hormigueo al orinar?
+    - ha tenido parestesia
+    - ¿tiene la sensación de un bulto en la vagina?
+    - ¿tuvo destellos en su campo de visión
+    - ¿has tenido alguna vez un dolor muy agudo en el dedo gordo del pie
+    - es tu voz ronca
+    - ¿ve usted a veces halos de luz
+    - ¿te has quedado sin aliento?
+    - estornuda mucho
+    - ¿Tienes palpitaciones?
+    - ¿tienes la boca pastosa?
+    - ¿Ha notado algún bulto o hinchazón en sus senos?
+    - ¿te duele la cabeza?
+    - ¿ha tenido alguna vez un soplo?
+    - ¿Tienes dolor de huesos?
+    - ¿ha notado sangre en su esputo?
+    - ¿algún problema con la anestesia?
+    - ¿siente dolor en el pecho en un vicio?
+    - ¿tiene pitidos o silbidos en los oídos?
+    - te tiemblan los brazos y las piernas
+    - ¿te resulta difícil hacer tus ejercicios deportivos?
+    - ha cambiado la fuerza del chorro
+    - ¿ha tenido algún movimiento anormal?
+    - ¿el zumbido en sus oídos es pulsante?
+    - ¿Gripe?
+    - OK ¿Hubo otros signos con esto? ¿Vomitó, o?
+    - hay un dolor que aprieta
+    - ¿tiene ganas de orinar pero no puede liberar una pequeña cantidad?
+    - tenía muchas náuseas?
+    - ¿las inflamaciones le despiertan por la noche?
+    - ¿tiene dificultad para tragar?
+    - ¿tiene usted sequedad vaginal?
+    - ¿has recibido alguna vez un golpe en la oreja
+    - ¿tiene a veces calambres en los brazos?
+    - ¿volvió su digestión a la normalidad después?
+    - ¿vómitos?
+    - ¿tiene dificultad para oír sonidos agudos?
+    - ¿Tienes palpitaciones?
+    - ¿tiene problemas de corazón?
+    - te has mordido la lengua
+    - tarda en empezar a orinar
+    - ¿diabetes?
+    - ¿tiene usted tics?
+    - ¿tiene una sensación de distensión
+    - tiene pérdida de memoria deteriorada con los años
+    - ¿tiene entumecimiento u hormigueo en los dedos?
+    - es un dolor de aguja
+    - ¿tiene usted la nariz que gotea?
+    - ¿le resulta difícil leer debido a su vista?
+    - ¿tiene usted frecuentes despertares nocturnos?
+    - ¿es usted víctima del tabaquismo pasivo en el trabajo o en casa?
+    - tiene un flujo menstrual reducido
+    - ¿estás tosiendo simples rastros de sangre
+    - era una enfermedad infecciosa
+    - ¿es su apetito normal últimamente?
+    - eres anoréxico
+    - ¿tiene problemas de tránsito?
+    - ¿es usted propenso a los dolores de cabeza?
+    - ¿tiene disnea de esfuerzo?
+    - era una enfermedad hereditaria
+    - es tu voz más alta
+    - ¿tiene a veces dificultades para abrir las ollas?
+    - ¿tiene problemas de libido?
+    - ¿has tenido que forzar o empujar para terminar de orinar?
+    - ¿se despierta a veces sin aliento?
+    - ha cambiado la forma de su mandíbula
+    - ¿tiene algún movimiento en particular
+    - los sólidos no pasan
+    - ¿se siente esta zona hinchada?
+    - ¿tiene usted un sentido del olfato especialmente fuerte?
+    - ¿tiene brotes?
+    - ¿cáncer?
+    - ¿sufre de edemas?
+    - ¿Sientes que tu bebé se mueve más de lo normal?
+    - ¿tiene usted dolor en el pecho?
+    - ¿te has caído alguna vez?
+    - ¿has tenido alguna vez una sensación de crujido
+    - ¿te duelen las piernas?
+    - ¿hay una pérdida de memoria constante?
+    - ¿ha tenido alguna vez una disminución del volumen de orina?
+    - ¿tiene usted colesterol?
+    - es un dolor leve
+    - ¿y la tos?
+    - ¿sufre usted una enfermedad arterial?
+    - ¿tiene usted la presión arterial alta?
+- intent: tratamiento_anticonceptivos_describir
+  examples: |
+    - en qué forma utiliza anticonceptivos
+    - ha utilizado métodos anticonceptivos
+    - ha utilizado métodos anticonceptivos
+- intent: tratamiento_anticonceptivos_frecuencia
+  examples: |
+    - ¿Con qué frecuencia utiliza preservativos durante el sexo anal?
+    - ¿Con qué frecuencia utiliza preservativos durante el sexo anal?
+    - ¿Con qué frecuencia utiliza preservativos durante el sexo anal?
+- intent: tratamiento_anticonceptivos_si_o_no
+  examples: |
+    - ¿tiene un DIU?
+    - ¿usas el DIU?
+    - ¿usas anticonceptivos?
+    - ¿usas un DIU?
+    - ¿usas un gel espermicida
+    - ¿usas métodos anticonceptivos?
+    - ¿usas un DIU?
+    - ¿utilizas anticonceptivos?
+- intent: tratamiento_consulta_describir
+  examples: |
+    - ¿ha estado alguna vez en otro médico?
+    - ¿se hizo alguna prueba antes de acudir a urgencias?
+    - ¿le siguen otras especialidades?
+    - ¿tiene seguimiento de algún especialista?
+    - ¿Qué especialista le ha enviado a verme?
+- intent: tratamiento_consulta_especialista_si_o_no
+  examples: |
+    - ¿No tienes un médico de cabecera?
+    - ¿No tienes un médico de cabecera?
+    - ¿No tienes un médico de cabecera?
+- intent: tratamiento_consulta_fecha
+  examples: |
+    - ¿cuándo fue el último control de salud?
+    - ha ido al médico recientemente
+    - ¿cuándo fue el último control de salud?
+- intent: tratamiento_consulta_si_o_no
+  examples: |
+    - ¿has visto a alguien sobre esto
+    - ¿has estado alguna vez en la consulta?
+    - ¿Consultó a un médico antes de acudir a urgencias?
+    - ¿viene a una consulta de preanestesia?
+    - ¿viene a una consulta de preanestesia?
+    - ¿te sigue un cardiólogo?
+    - ¿viene a una consulta de preanestesia?
+    - ha consultado alguna vez a un gastroenterólogo
+    - ¿te siguen los especialistas?
+    - ¿has visto a algún otro médico aparte de mí?
+    - ¿viene a una consulta de preanestesia?
+- intent: tratamiento_diagnostico_como
+  examples: |
+    - ¿cómo sabe que es hipertensión esencial?
+    - ¿Cómo se enteró de su hipertensión arterial esencial?
+    - ¿Cómo se enteró de su hipertensión arterial esencial?
+- intent: tratamiento_diagnostico_fecha
+  examples: |
+    - ¿cuándo tuvo un diagnóstico oftalmológico?
+    - ¿Cuándo se realizó un inmunoensayo enzimático?
+    - ¿cuándo tuvo un diagnóstico oftalmológico?
+- intent: tratamiento_diagnostico_quien
+  examples: |
+    - ¿Quién te ha dicho que tienes hipertensión esencial?
+    - ¿Quién te ha dicho que tienes hipertensión esencial?
+    - ¿Quién te ha dicho que tienes hipertensión esencial?
+- intent: tratamiento_diagnostico_si_o_no
+  examples: |
+    - ¿te han dicho alguna vez que tienes una enfermedad de transmisión sexual?
+    - ¿conoces tu presión arterial?
+    - ¿conoces tu presión arterial?
+- intent: tratamiento_historial_describir
+  examples: |
+    - hablemos de su historia
+    - ¿tiene algún historial médico?
+    - ¿tiene algún historial médico?
+    - hablemos de su historia
+    - ¿tiene otros antecedentes médicos o quirúrgicos que comunicar?
+    - ¿algún historial médico especial?
+- intent: tratamiento_historial_si_o_no
+  examples: |
+    - ¿tiene un historial médico?
+    - ¿tiene un historial médico?
+    - ¿tiene un historial médico?
+- intent: tratamiento_medicacion_antecedentes
+  examples: |
+    - ¿ha tomado alguna vez algún medicamento antiinflamatorio?
+    - ¿ha tomado alguna vez algún medicamento antiinflamatorio?
+    - de acuerdo ¿y ya habías tomado tratamientos antes?
+- intent: tratamiento_medicacion_cuando
+  examples: |
+    - a qué hora deberías haber tomado la píldora
+    - a qué hora deberías haber tomado la píldora
+    - ¿cuándo tomaste el doliprane?
+- intent: tratamiento_medicacion_describir
+  examples: |
+    - ¿tomas alguna medicación?
+    - ¿Toman tus padres alguna medicación?
+    - ¿tomaste algo?
+    - ok ¿tomas algún tratamiento especial? para tu alergia o para cualquier otra cosa?
+    - ¿tomaste algún medicamento para aliviarte?
+    - ¿Estás tomando algún tratamiento para esta hipertensión?
+    - ¿está tomando alguna medicación?
+    - ¿toma alguna medicación?
+    - ¿ningún medicamento?
+    - ¿Estás tomando alguna medicación en este momento?
+    - ¿Qué medicamentos está tomando?
+    - ¿tomas alguna medicación?
+    - ¿has tomado algo para aliviar el dolor?
+    - ¿tomas alguna medicación?
+    - ¿tomas alguna medicación?
+    - ¿tomas alguna medicación?
+    - ¿tomas alguna medicación?
+    - ¿toma usted medicamentos para la presión arterial?
+    - ¿toma medicamentos para el corazón o diuréticos?
+    - ¿No toma ninguna medicación?
+    - ¿ha tomado alguna medicación para quedarse embarazada?
+    - ¿qué pasa con sus vacunas?
+    - ¿tomas alguna otra medicación?
+    - ¿tomas alguna medicación?
+    - ¿toma alguna medicación?
+    - ¿toma medicamentos para aliviar el dolor?
+    - Aparte de los dos comprimidos de paracetamol, ¿ha tomado algún otro medicamento recientemente?
+    - ¿otros medicamentos?
+- intent: tratamiento_medicacion_dosis
+  examples: |
+    - ¿dosis?
+    - ¿a qué dosis?
+    - ¿dosis?
+- intent: tratamiento_medicacion_duracion
+  examples: |
+    - ¿cuánto tiempo llevas tomando co-renitec?
+    - ¿cuánto tiempo lleva tomando coversyl para la hipertensión?
+    - ¿cuánto tiempo llevas tomando co-renitec?
+- intent: tratamiento_medicacion_frecuencia
+  examples: |
+    - cierto ¿toma tratamientos todos los días? ¿medicamentos?
+    - ok ¿toma medicación a diario?
+    - cierto ¿toma tratamientos todos los días? ¿medicamentos?
+- intent: tratamiento_medicacion_motivo
+  examples: |
+    - ¿por qué tomas coversyl?
+    - ¿Por qué tomas paracetamol?
+    - ¿Por qué tomas paracetamol?
+- intent: tratamiento_medicacion_otros
+  examples: |
+    - ¿alguna vez te olvidas de tomar tu pastilla?
+    - ¿sigues bien tu tratamiento?
+    - ¿sigues bien tu tratamiento?
+- intent: tratamiento_medicacion_receta
+  examples: |
+    - Te recetaré paracetamol
+    - Te recetaré paracetamol
+    - Te recetaré paracetamol
+- intent: tratamiento_medicacion_si_o_no
+  examples: |
+    - ¿estás tomando un tranquilizante?
+    - ¿es necesario tomar analgésicos?
+    - ¿has tomado algún medicamento para la fiebre?
+    - de acuerdo ¿sin medicación?
+    - ¿tomaste analgésicos?
+    - ok ¿tomaste analgésicos o no?
+    - ¿están sus vacunas al día?
+    - ¿Se ha vacunado contra la polio?
+    - ¿Te has vacunado?
+    - ¿tomó un medicamento para ello?
+    - ¿se ha vacunado?
+    - se ha vacunado alguna vez contra la hepatitis b
+    - ¿has tomado algo para aliviar el dolor?
+    - ¿Está tomando un neuroléptico?
+    - ¿están sus vacunas al día?
+    - ¿vacuna contra la gripe?
+    - ¿ha utilizado alguna crema o pomada
+    - ¿Ni siquiera la píldora?
+    - ¿estás al día con tus vacunas?
+    - ¿usas una bomba de insulina?
+    - ¿toma usted el dializador?
+    - ¿Está usted vacunado contra el neumococo?
+    - ¿no tienes insulina?
+    - ¿has probado a tomar analgésicos?
+- intent: tratamiento_operacion_complicaciones
+  examples: |
+    - ¿tuvo algún problema durante estas operaciones?
+    - ha tenido un problema de ritmo con un marcapasos, desfibrilador cardioversor implantable o implante de holter
+    - ¿tuvo algún problema durante estas operaciones?
+- intent: tratamiento_operacion_describir
+  examples: |
+    - ¿me das la lista de tus tratamientos?
+    - ¿algún tratamiento?
+    - ¿qué se va a operar?
+    - ¿historia quirúrgica?
+    - ¿ha sido hospitalizado por algún problema de salud?
+    - ¿tiene antecedentes quirúrgicos?
+    - ¿tiene algún tratamiento?
+    - cómo fue el cuidado postoperatorio
+    - ¿Cuál es su tratamiento?
+    - ¿se ha operado alguna vez?
+    - ¿estás tomando algún tratamiento médico
+    - ok y si no, ¿ha habido alguna otra operación o algo?
+    - ¿se ha operado alguna vez?
+    - ¿se ha operado alguna vez?
+    - ¿algún tratamiento?
+    - ¿se ha sometido a alguna prueba reciente?
+    - ¿Cuál es su tratamiento actual?
+    - ¿qué usaste para tratarte?
+    - cómo fue el cuidado postoperatorio
+    - ¿Cuál es su historial quirúrgico?
+    - ¿ha tenido alguna vez una operación quirúrgica?
+    - ¿se ha operado alguna vez?
+    - y aparte de las muelas del juicio, ¿ha tenido alguna otra operación?
+    - ¿tiene algún tratamiento?
+    - ¿se ha operado alguna vez?
+    - ¿se ha operado alguna vez?
+    - ¿Cuál es su tratamiento actual?
+    - cómo fue el cuidado postoperatorio
+    - ¿Cuál es su tratamiento habitual?
+    - ¿Cuál es su tratamiento?
+    - ¿Cómo va el tratamiento?
+    - y ¿se ha operado alguna vez o?
+    - tratamiento?
+    - ¿Se ha operado alguna vez?
+    - ¿se ha sometido a alguna prueba reciente?
+    - ¿ha tenido alguna operación quirúrgica?
+    - ¿se ha operado alguna vez?
+    - ¿Se ha operado?
+    - ¿Se ha operado alguna vez?
+- intent: tratamiento_operacion_dosis
+  examples: |
+    - cuál es su consumo de psicoestimulantes
+    - cuál es su consumo de psicoestimulantes
+    - cuál es su consumo de psicoestimulantes
+- intent: tratamiento_operacion_especialista
+  examples: |
+    - ¿Quién será su cirujano?
+    - ¿Quién será su cirujano?
+    - ¿Quién será su cirujano?
+- intent: tratamiento_operacion_fecha
+  examples: |
+    - ¿cuándo te has hecho un escáner?
+    - ¿cuándo se hizo una prueba de hemoglobina?
+    - ¿cuándo se operó del corazón?
+    - ¿cuándo se ha operado del freno lingual?
+    - ¿Cuál es la fecha de su operación?
+    - ¿cuándo fue su laparoscopia?
+    - cuándo fue su última radiografía de tórax
+    - ¿cuál es la fecha de su cirugía del área tegmental ventral?
+    - ¿cuándo tendrá lugar la operación que va a realizar?
+    - ¿cuándo se hizo una prueba de esfuerzo?
+    - cuándo fue su última radiografía de tórax
+    - ¿cuál es la fecha de su implante dental?
+    - ¿cuándo te has hecho un escáner?
+    - ¿cuándo se operó del esfínter?
+- intent: tratamiento_operacion_frecuencia
+  examples: |
+    - ¿se cepilla los dientes a menudo?
+    - ¿se cepilla los dientes a menudo?
+    - ¿se cepilla los dientes a menudo?
+- intent: tratamiento_operacion_motivo
+  examples: |
+    - ¿Por qué quiere quitarte la vesícula?
+    - ¿Por qué quiere quitarte la vesícula?
+    - ¿Por qué quiere quitarte la vesícula?
+- intent: tratamiento_operacion_resultados
+  examples: |
+    - ¿Toleró bien la cirugía de los dedos del pie?
+    - la cirugía de testículos fue bien
+    - la cistoureteroscopia fue bien
+    - ¿Qué tal le fue con la cirugía de las axilas?
+    - la cirugía de la vértebra lumbar fue bien
+    - la cirugía de la vértebra lumbar fue bien
+    - cómo fue la operación de hiato
+    - ¿Toleró bien la cirugía de hígado?
+    - ¿Toleró bien la cirugía del nervio periférico
+    - ¿cómo fue la operación del hueso del pie?
+    - la cirugía muscular fue bien
+    - resultados de radio
+    - ¿tomó bien la operación de la arteria coronaria
+    - ¿cómo fue la operación de médula?
+    - ¿cómo fue la operación de cóclea?
+    - ¿Cuál es el resultado de su prueba de lípidos?
+    - ¿se ha enfrentado bien a la operación de ligamentos?
+    - la cirugía de colon fue bien
+    - resultados de radio
+    - la cirugía de la glía fue bien
+    - cómo fue la operación en el ventrículo
+    - ¿cuáles son los resultados de la radiografía?
+    - la operación de cartílago fue bien
+- intent: tratamiento_operacion_si_o_no
+  examples: |
+    - ha tenido un postoperatorio
+    - se ha operado
+    - ¿te has hecho alguna vez la prueba del vih, el virus que causa el sida?
+    - ¿te has hecho alguna prueba?
+    - ¿es suficiente la dieta para controlar su diabetes?
+    - ¿ha sido hospitalizado por hepatitis?
+    - ¿estás tomando algún tratamiento?
+    - ¿te has hecho una ecografía?
+    - ¿usabas gafas cuando eras joven?
+    - ¿usas gotas para la nariz?
+    - ¿y los partos fueron cesáreas?
+    - ¿ha sido hospitalizado recientemente?
+    - ¿se ha sometido a pruebas cutáneas alérgicas?
+    - ¿usas pasta de dientes con flúor?
+    - ¿te has medido la tensión arterial?
+    - ¿usas bastoncillos de algodón?
+    - se ha sometido a una termocoagulación
+    - ¿te has hecho alguna vez un análisis de sangre?
+    - ¿tiene un ecg?
+    - ¿usas habitualmente lentes de contacto?
+    - ¿usas la píldora
+    - se ha hecho un ecocardiograma doppler
+    - tratamientos
+    - ¿has utilizado un método anticonceptivo fiable?
+    - ha tenido un aborto inducido
+    - ¿Se ha sometido a una circuncisión?
+    - ¿usas gafas?
+    - ¿Ha estado alguna vez en el hospital?
+    - ¿ha tenido una cirugía de columna?
+    - ¿llevas ortodoncia?
+    - ¿ha podido hacer frente a la operación de ligamento cruzado
+    - no importa, estaba pensando en voz alta ¿te has hecho algún análisis de sangre recientemente?
+    - ¿Ha recibido radioterapia?
+    - ¿has tenido alguna anestesia general?
+    - ¿se inyecta usted mismo?
+    - ¿usas habitualmente loción para después del afeitado?
+    - ¿se ha lavado el oído con una jeringa
+    - ¿tiene un tratamiento para bajar la presión arterial
+    - ¿se toma la tensión regularmente?
+    - ¿compruebas tu nivel de azúcar en sangre capilar
+    - ¿usas cepillos interdentales
+    - ¿ha sido operado de la médula ósea?
+    - ¿ha tenido una cirugía de columna?
+    - ¿y tú personalmente nunca has estado en un hospital?
+    - ¿has tenido una episiotomía?
+    - ¿Se ha sometido a un bypass bilio-pancreático?
+    - cirugía
+    - ¿Le han recetado un tratamiento para la hipertensión?
+    - ¿se hace la prueba del azúcar en sangre capilar?
+    - ¿tiene audífonos?
+    - ¿usas gafas?
+    - ¿has hecho algo para reducir el volumen de las heces?
+    - ¿llevas vendas?
+    - ¿ha tenido una cirugía de columna?
+    - te han quitado las amígdalas
+    - ¿Se ha hecho un electrocardiograma?
+    - se ha enderezado los dientes
+    - ¿Se ha operado el músculo supinador?
+    - ha tenido partos por cesárea
+    - ¿usas protector solar?
+    - ¿has estado alguna vez en el hospital?
+- intent: vida_sexual_describir
+  examples: |
+    - háblame de tu vida_sexual
+    - háblame de tu vida_sexual
+    - háblame de tu vida_sexual
+- intent: vida_sexual_edad
+  examples: |
+    - ¿Qué edad tenías cuando tuviste tus primeras relaciones sexuales?
+    - ¿Qué edad tenías cuando tuviste tus primeras relaciones sexuales?
+    - ¿Qué edad tenías cuando tuviste tus primeras relaciones sexuales?
+- intent: vida_sexual_frecuencia
+  examples: |
+    - ¿Con qué frecuencia tiene usted relaciones sexuales?
+    - ¿Con qué frecuencia tiene usted relaciones sexuales?
+    - ¿Con qué frecuencia tiene usted relaciones sexuales?
+- intent: vida_sexual_otros
+  examples: |
+    - ¿eres heterosexual?
+    - ¿tiene usted sexo con prostitutas?
+    - es usted heterosexual, homosexual o de sexualidad indeterminada
+- intent: vida_sexual_si_o_no
+  examples: |
+    - ¿Es usted sexualmente activo?
+    - ¿es usted sexualmente activo?
+    - es usted sexualmente activo
+    - ¿has tenido alguna vez sexo?
+    - ha tenido relaciones sexuales
