@@ -1,6 +1,6 @@
 # VIR-PAT
 
-Instalazio eta egikaritzea osa bakuna eta azkarra da. Hasteko, ''GitHub''-en eskegitako VIR-PAT\footnote{\url{https://github.com/Midoiaga/VIR-PAT}} txatbota deskargatu behar da. Demoa probatzeko baldintzak Python lengoaia izatea da, bere bertsioa 3.0 bertsioa baino handiago izanik eta Windows edo Linux-en oinarritutako sistema eragile bat izatea. Ondoren, deskargatzen den fitxategien artean ''requirments.txt'' izeneko fitxategia kokatu behar. Eta hurrengo komando egikaritu behar da, zure terminalean:\\
+Demoa probatzeko baldintzak Python lengoaia izatea da, bere bertsioa 3.0 bertsioa baino handiago izanik eta Windows edo Linux-en oinarritutako sistema eragile bat izatea. Ondoren, deskargatzen den fitxategien artean ''requirments.txt'' izeneko fitxategia kokatu behar. Eta hurrengo komando egikaritu behar da, zure terminalean:\\
 
 
     pip3 install /gorde/den/direktorioa/requirments.txt
