@@ -1,14 +1,14 @@
 # VIR-PAT
 
-Demoa probatzeko baldintzak Python lengoaia izatea da, bere bertsioa 3.0 bertsioa baino handiago izanik eta Windows edo Linux-en oinarritutako sistema eragile bat izatea. Ondoren, deskargatzen den fitxategien artean ''requirments.txt'' izeneko fitxategia kokatu behar. Eta hurrengo komando egikaritu behar da, zure terminalean:\\
+Demoa probatzeko baldintzak Python lengoaia izatea da, bere bertsioa 3.0 bertsioa baino handiago izanik eta Windows edo Linux-en oinarritutako sistema eragile bat izatea. Ondoren, deskargatzen den fitxategien artean ''requirments.txt'' izeneko fitxategia kokatu behar. Eta hurrengo komando egikaritu behar da, zure terminalean:
 
 
     pip3 install /gorde/den/direktorioa/requirments.txt
 
 
-Dependentzia guztiak instalatzen diren bitartean, RASA-ren modeloa deskargatu behar da, horrela intent sailkatzailea kenduta beste zerbitzu guztiak izateko. Modelo hori Drive-en hurrengo link-an (https://drive.google.com/file/d/1TziykqonGlc_uF5-lWjf2qW4aloMrj1m/view?usp=drive_link) gordeta dago eta behin deskargatzen denean \textit{VIR-PAT/models/} direktorio barnera eramango da.\\
+Dependentzia guztiak instalatzen diren bitartean, RASA-ren modeloa deskargatu behar da, horrela intent sailkatzailea kenduta beste zerbitzu guztiak izateko. Modelo hori Drive-en hurrengo link-an (https://drive.google.com/file/d/1TziykqonGlc_uF5-lWjf2qW4aloMrj1m/view?usp=drive_link) gordeta dago eta behin deskargatzen denean \textit{VIR-PAT/models/} direktorio barnera eramango da.
 
-Instalazioak bukatzerakoan eta modeloa dagokion tokian jarrita dagoenean, prototipoa abiarazi daiteke. Linux-eko sistema eragile bat erabiliz gero, terminal bat ireki beharko da ''VIR-PAT'' izeneko karpetan eta terminalean hurrengo komandoa jarri behar da.\\
+Instalazioak bukatzerakoan eta modeloa dagokion tokian jarrita dagoenean, prototipoa abiarazi daiteke. Linux-eko sistema eragile bat erabiliz gero, terminal bat ireki beharko da ''VIR-PAT'' izeneko karpetan eta terminalean hurrengo komandoa jarri behar da.
 
 
     rasa run actions & rasa shell
